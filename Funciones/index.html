@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //  Mostrar un mensaje que se repita 3 veces en la página con el siguiente texto
+
+      //   function mostrarMensaje() {
+      //     document.write("Cuidado<br>");
+      //     document.write("Ingrese su documento correctamente<br>");
+      //   }
+
+      //   mostrarMensaje();
+      //   mostrarMensaje();
+      //   mostrarMensaje();
+      //   Confeccionar una función que solicite el ingreso de un entero y nos muestre la tabla de multiplicar de dicho valor. Llamar luego una vez a la función.
+
+      //   function num() {
+      //     let valor = parseInt(prompt("Ingrese un numero"));
+
+      //     for (let i = 1; i <= 10; i++) {
+      //       let mul = valor * i;
+      //       document.write(valor + "i" + i + "=" + mul + "<br>");
+      //     }
+      //   }
+      //   num();
+
+      // Confeccionar una función que solicite la carga de dos enteros (primero el menor y luego el mayor) y nos muestre desde el menor hasta el mayor de uno en uno.
+      // Por ejemplo si ingresamos los valores 4 y 10 luego se debe mostrar por pantalla:
+      // 4 5 6 7 8 9 10
+
+      //   function num() {
+      //     let inicial = parseInt(prompt("Ingrese valor inicial"));
+      //     let final = parseInt(prompt("Ingrese valor final"));
+
+      //     for (let i = inicial; i <= final; i++) {
+      //       document.write(i + "<br>");
+      //     }
+      //   }
+
+      //   num();
+
+      // Funciones con parámetros.
+      //  Confeccionar una función que reciba dos números y muestre en la página los valores comprendidos entre ellos de uno en uno. Cargar por teclado esos dos valores.
+
+      //   function mostrarComprendidos(inicio, fin) {
+      //     for (let i = inicio; i <= fin; i++) {
+      //       document.write(i + " ");
+      //     }
+      //   }
+
+      //   let valor1 = parseInt(prompt("Ingrese valor inferior:"));
+      //   let valor2 = parseInt(prompt("Ingrese valor superior:"));
+      //   mostrarComprendidos(valor1, valor2);
+
+      // Elaborar una función a la cual le enviemos tres enteros y muestre el menor.
+
+      //   function enteros(num1, num2, num3) {
+      //     if (num1 < num2 && num1 < num3) {
+      //       document.write("El numero menor es: " + num1);
+      //     } else if (num2 < num1 && num2 < num3) {
+      //       document.write("El numero menor es: " + num2);
+      //     } else {
+      //       document.write("El numero menor es: " + num3);
+      //     }
+      //   }
+
+      //   let num1 = parseInt(prompt("Ingrese primer numero"));
+      //   let num2 = parseInt(prompt("Ingrese segundo numero"));
+      //   let num3 = parseInt(prompt("Ingrese tercer numero"));
+
+      //   enteros(num1, num2, num3);
+
+      // Confeccionar una función a la cual le envíe tres enteros y los muestre ordenados de menor a mayor.
+
+      //     function mostrarOrdenados(x1, x2, x3) {
+      //         if (x1 < x2 && x1 < x3) {
+      //             document.write(x1 + ' ');
+      //             if (x2 < x3) {
+      //                 document.write(x2 + ' ' + x3);
+      //             } else {
+      //                 document.write(x3 + ' ' + x2);
+      //             }
+      //         } else {
+      //             if (x2 < x3) {
+      //                 document.write(x2 + ' ');
+      //                 if (x1 < x3) {
+      //                     document.write(x1 + ' ' + x3);
+      //                 } else {
+      //                     document.write(x3 + ' ' + x1);
+      //                 }
+      //             } else {
+      //                 document.write(x3 + ' ');
+      //                 if (x1 < x2) {
+      //                     document.write(x1 + ' ' + x2);
+      //                 } else {
+      //                     document.write(x2 + ' ' + x1);
+      //                 }
+      //             }
+      //         }
+      //     }
+
+      //     let valor1 = parseInt(prompt('Ingrese primer valor:'));
+      //     let valor2 = parseInt(prompt('Ingrese segundo valor:'));
+      //     let valor3 = parseInt(prompt('Ingrese tercer valor:'));
+      //     document.write('Los tres valores ingresados son ' + valor1 + ' ' + valor2 + ' ' + valor3 + '<br>');
+      //     document.write('Los valores ordenados de menor a mayor son: ');
+      //     mostrarOrdenados(valor1, valor2, valor3);
+
+      //   Funciones que retornan un valor.
+
+      // Confeccionar una función que reciba un valor entero comprendido entre 1 y 5. Luego retornar en castellano el valor recibido.
+
+      //   function numero(valor) {
+      //     if (valor === 1) {
+      //       return document.write("El valor ingresado es 1");
+      //     } else if (valor === 2) {
+      //       return document.write("El valor ingresado es 2");
+      //     } else if (valor === 3) {
+      //       return document.write("El valor ingresado es 3");
+      //     } else if (valor === 4) {
+      //       return document.write("El valor ingresado es 4");
+      //     } else if (valor === 5) {
+      //       return document.write("El valor ingresado es 5");
+      //     } else {
+      //       return documen.write("Valor incorrecto");
+      //     }
+      //   }
+
+      //   let valor = parseInt(prompt("Ingrese un numero entre 1 y 5"));
+      //   numero(valor);
+
+      //   Confeccionar una función que reciba una fecha con el formato de día, mes y año y retorne un string con un formato similar a: "Hoy es 27 de enero de 2021".
+
+      //   function fecha(dia, mes, año) {
+      //     return document.write("hoy es " + dia + " de " + mes + " de " + año);
+      //   }
+
+      //   let dia = parseInt(prompt("Ingrese el dia"));
+      //   let mes = prompt("Ingrese el mes");
+      //   let año = parseInt(prompt("Ingrese el año"));
+
+      //   fecha(dia, mes, año);
+
+      //   function formatearFecha(dia, mes, año) {
+      //     let s = "Hoy es " + dia + " de ";
+      //     switch (mes) {
+      //       case 1:
+      //         s = s + "enero ";
+      //         break;
+      //       case 2:
+      //         s = s + "febrero ";
+      //         break;
+      //       case 3:
+      //         s = s + "marzo ";
+      //         break;
+      //       case 4:
+      //         s = s + "abril ";
+      //         break;
+      //       case 5:
+      //         s = s + "mayo ";
+      //         break;
+      //       case 6:
+      //         s = s + "junio ";
+      //         break;
+      //       case 7:
+      //         s = s + "julio ";
+      //         break;
+      //       case 8:
+      //         s = s + "agosto ";
+      //         break;
+      //       case 9:
+      //         s = s + "septiembre ";
+      //         break;
+      //       case 10:
+      //         s = s + "octubre ";
+      //         break;
+      //       case 11:
+      //         s = s + "noviembre ";
+      //         break;
+      //       case 12:
+      //         s = s + "diciembre ";
+      //         break;
+      //     } //fin del switch
+      //     s = s + "de " + año;
+      //     return s;
+      //   }
+
+      //   document.write(formatearFecha(1, 4, 2021));
+
+      // Confeccionar una función a la cual le envíe tres enteros y retorne el mayor de ellos.
+
+      //Confeccionar una función a la cual le envíe tres enteros
+      //y retorne el mayor de ellos.
+
+      //   function retornarMayor(x1, x2, x3) {
+      //     if (x1 > x2 && x1 > x3) {
+      //       return x1;
+      //     } else {
+      //       if (x2 > x3) {
+      //         return x2;
+      //       } else {
+      //         return x3;
+      //       }
+      //     }
+      //   }
+
+      //   let valor1 = parseInt(prompt("Ingrese primer valor:"));
+      //   let valor2 = parseInt(prompt("Ingrese segundo valor:"));
+      //   let valor3 = parseInt(prompt("Ingrese tercer valor:"));
+      //   document.write(
+      //     "Los tres valores ingresados son " +
+      //       valor1 +
+      //       " " +
+      //       valor2 +
+      //       " " +
+      //       valor3 +
+      //       "<br>"
+      //   );
+      //   let may = retornarMayor(valor1, valor2, valor3);
+      //   document.write("El mayor de los tres es :" + may);
+
+      // Elaborar una función a la cual le envíe el valor del lado de un cuadrado y me retorne su perímetro.
+
+      // function triangulo(lado) {
+      //   return lado * 4
+      // }
+      // let lado = parseInt(prompt("Digite lado del cuadrado"));
+      // let perimetro = triangulo(lado);
+      // document.write("El perimetro del cuadrado es:" + perimetro);
+
+      // Desarrollar una función que retorne la cantidad de dígitos que tiene una variable entera positiva de hasta 5 dígitos.
+
+      // function entero(valor) {
+      //   if (valor < 10) {
+      //     return 1;
+      //   } else {
+      //     if (valor < 100) {
+      //       return 2;
+      //     } else if (valor < 1000) {
+      //       return 3;
+      //     } else if (valor < 10000) {
+      //       return 4;
+      //     } else {
+      //       return 5;
+      //     }
+      //   }
+      // }
+      // let valor = parseInt(prompt("digite un valor de hasta 5 digitos"));
+      // document.write(entero(valor));
+
+      // Elaborar una función que reciba tres enteros y retorne el promedio.
+
+      // function entero(valor1, valor2, valor3) {
+      //   return (suma = (valor1 + valor2 + valor3) / 3);
+      // }
+
+      // let valor1 = parseInt(prompt("Digite primer valor"));
+      // let valor2 = parseInt(prompt("Digite segundo valor"));
+      // let valor3 = parseInt(prompt("Digite tercer valor"));
+
+      // document.write(
+      //   "El promedio de los valores ingresados es de: " +
+      //     entero(valor1, valor2, valor3)
+      // );
+
+      // Confeccionar una función que solicite la carga de 5 valores por teclado y retorne su suma.
+
+      // function cargarValores() {
+      //   let suma = 0;
+      //   for (let i = 1; i <= 5; i++) {
+      //     let valor = parseInt(prompt("Ingrese valor:"));
+      //     suma = suma + valor;
+      //   }
+      //   return suma;
+      // }
+
+      // let s = cargarValores();
+      // document.write("La suma de los 5 valores es: " + s);
+
+      // Funciones: objeto arguments
+      /**
+       * Todo:función con objeto argument
+       */
+      // function suma(a, b) {
+      //   return arguments[0] + arguments[1];
+      // }
+      // document.write(`${suma(2, 7)}<br>`);
+      /**
+       * Todo:función si el objeto argument(funcioón convencional)
+       */
+      // function suma(a, b) {
+      //   return a + b;
+      // }
+      // document.write(suma(2, 7));
+
+      //Ejercicio 2
+      // function sumar() {
+      //   let s = 0;
+      //   for (let i = 0; i < arguments.length; i++) {
+      //     s += arguments[i];
+      //   }
+      //   return s;
+      // }
+
+      // document.write(sumar(2, 4));
+      // document.write("<br>");
+      // document.write(sumar(1, 2, 3, 4, 5));
+      // document.write("<br>");
+      // document.write(sumar(100, 200, 300));
+      // <div id="lista1"></div>;
+      // function iniciar() {
+      //   generarLista("lista1", "uno", "dos", "tres", "cuatro", "cinco", "seis");
+      // }
+
+      // function generarLista() {
+      //   let s = "<ol>";
+      //   for (let i = 1; i < arguments.length; i++) {
+      //     s = s + "<li>" + arguments[i] + "</li>";
+      //   }
+      //   s = s + "</ol>";
+      //   let elemento1 = document.getElementById(arguments[0]);
+      //   elemento1.innerHTML = s;
+      // }
+
+      // iniciar();
+
+      // Confeccionar una función que obtenga y retorne el mayor valor de una lista de enteros que le pasamos como parámetros.
+      // function mayor() {
+      //     let may = arguments[0];
+      //     for (let i = 1; i < arguments.length; i++) {
+      //         if (arguments[i] > may) {
+      //             may = arguments[i];
+      //         }
+      //     }
+      //     return may;
+      // }
+
+      // document.write(mayor(7, 22, 4, 66, 3, 22, 55));
+    </script>
+
+    <script>
+      // 'use strict';
+
+      // function imprimir() {
+      //    let i = 100; //error
+      //     document.write(i + '<br>');
+      // }
+
+      // imprimir();
+      // document.write(i + '<br>');
+    </script>
+    <!--Todo: Funciones: anidadas -->
+    <!-- Confeccionar una función que reciba un parámetro y defina una variable
+    local. Definir dentro de la función que acabamos de crear una función
+    anidada que contenga un parámetro. En la función anidada imprimir el
+    parámetro de la función que la contiene, el parámetro que tiene la función
+    anidada y el valor de la variable local de la función principal. -->
+    <script>
+      // function funcionAnidada1(a) {
+      //   let b = 2;
+      //   function funcionAnidada2(c) {
+      //     return (imprimir = a + b + c);
+      //   }
+
+      //   return funcionAnidada2(3);
+      // }
+      // document.write(funcionAnidada1(4));
+    </script>
+    <!--Todo: Funciones: parámetros de tipo función -->
+    <script>
+      // let f1 = function (i, y) {
+      //   let s = i + y;
+      //   return s;
+      // };
+
+      // document.write(f1(4, 6) + "<br>");
+      // let f2 = f1;
+      // document.write(f2(3, 3) + "<br>");
+    </script>
+    <!-- Declare una función que reciba tres parámetros, el último de ellos es una función
+    Ejemplo1 -->
+    <script>
+      // function f1(a, b, fun) {
+      //   document.write(`Primer parametro:${a}<br>`);
+      //   document.write(`segundo parametro:${b}<br>`);
+      //   document.write(`Tercer parametro:${fun}<br>`);
+      // }
+
+      // function f2(b) {
+      //   return b;
+      // }
+      // let probar = f2;
+      // document.write(f1(2, 3, probar(5)));
+    </script>
+    <!-- Ejemplo2 -->
+    <script>
+      // function calcular(i, y, fu) {
+      //   let resu = fu(i, y);
+      //   return resu;
+      // }
+
+      // let s1 = calcular(10, 5, function (v1, v2) {
+      //   return v1 + v2;
+      // });
+
+      // document.write(s1 + "<br>");
+
+      // let s2 = calcular(10, 5, function (v1, v2) {
+      //   return v1 - v2;
+      // });
+
+      // document.write(s2 + "<br>");
+    </script>
+
+    <!-- Ejemplo3 -->
+    <script>
+      // function sumar(v1, v2) {
+      //   return v1 + v2;
+      // }
+
+      // function restar(v1, v2) {
+      //   return v1 - v2;
+      // }
+
+      // function calcular(i, y, fu) {
+      //   let resu = fu(i, y);
+      //   return resu;
+      // }
+
+      // let s1 = calcular(10, 5, sumar);
+
+      // document.write(s1 + "<br>");
+
+      // let s2 = calcular(10, 5, restar);
+
+      // document.write(s2 + "<br>");
+    </script>
+    <!--Todo: Función isNaN -->
+    <!-- Realizar la carga de dos valores enteros por teclado utilizando la función
+    prompt. Calcular la suma previo controlar que los dos valores sean de tipo
+    numérico. -->
+    <script>
+      // let x1, x2, suma;
+      // x1 = parseInt(prompt("Ingrese el primer valor:"));
+      // x2 = parseInt(prompt("Ingrese el segundo valor:"));
+      // if (Number.isNaN(x1) || Number.isNaN(x2)) {
+      //   document.write(
+      //     "Al menos uno de los dos valores ingresados no es numérico."
+      //   );
+      // } else {
+      //   suma = x1 + x2;
+      //   document.write("La suma de los dos valores es:" + suma);
+      // }
+    </script>
+    <!--Todo: Función isFinite -->
+    <!-- almacenar valores en variables que generen los distintos valores posibles -->
+    <script>
+      // let x1 = 120;
+      // if (isFinite(x1))
+      //   //true
+      //   document.write("x1 tiene un valor finito que es el " + x1);
+      // else document.write("x1 no tiene un valor finito que es el " + x1);
+      // document.write("<br>");
+      // let x2 = 10e399;
+      // if (isFinite(x2))
+      //   //false
+      //   document.write("x2 tiene un valor finito que es el " + x2);
+      // else document.write("x2 no tiene un valor finito que es el " + x2);
+      // document.write("<br>");
+      // let x3 = -10e399;
+      // if (isFinite(x3))
+      //   //false
+      //   document.write("x3 tiene un valor finito que es el " + x3);
+      // else document.write("x3 no tiene un valor finito que es el " + x3);
+      // document.write("<br>");
+      // let x4 = "juan";
+      // if (isFinite(x4))
+      //   //false
+      //   document.write("x4 tiene un valor finito que es el " + x4);
+      // else document.write("x4 no tiene un valor finito que es el " + x4);
+    </script>
+    <!--! Para conocer el máximo y mínimo valor que puede almacenar una variable numérica podemos consultar las constantes MIN_VALUE y MAX_VALUE de la clase Number -->
+    <script>
+      // document.write(Number.MIN_VALUE); // 5e-324
+      // document.write("<br>");
+      // document.write(Number.MAX_VALUE); // 1.7976931348623157e+308
+    </script>
+    <!-- Mostrar por pantalla el valor 10 elevado a la 1,2,3 etc. hasta que se genere un valor infinito. -->
+    <script>
+      // for (let i = 1; ; i++) {
+      //   let resu = Math.pow(10, i);
+      //   if (isFinite(resu))
+      //     document.write("10 elevado a la " + i + " es " + resu + "<br>");
+      //   //El metodo break corta el ciclo for
+      //   else break;
+      // }
+    </script>
+    <!-- Se ingresan por teclado dos números (emplear parseFloat para convertirlos) mostrar un mensaje si alguno de los dos no es un número (isNaN). Luego si son valores numéricos proceder a multiplicarlos y verificar si el resultado es finito (isFinite) para mostrar el resultado. -->
+    <script>
+      // let mul;
+      // let i = parseFloat(prompt(`Ingrese primer numero`));
+      // let y = parseFloat(prompt(`Ingrese segundo numero`));
+      // if (Number.isNaN(i) || Number.isNaN(y)) {
+      //   alert`Uno de los dos numeros no es un valor entero entero`;
+      // } else {
+      //   mul = i + y;
+      //   if (Number.isFinite(mul)) {
+      //     alert(`El numero es finito y su resultado es ${mul}`);
+      //   } else {
+      //     alert`El numero es infinito`;
+      //   }
+      // }
+    </script>
+    <!--Todo: Funciones setInterval, clearInterval, setTimeout y clearTimeout -->
+    <!-- Mostrar un cronómetro que comience en cero y se incremente en uno cada vez
+    que pase un segundo. Disponer un botón para poder detener o reiniciar el
+    cronómetro. -->
+    <script>
+      //setTimeout establece un temporizador que ejecuta una función o una porción de código después de que transcurre un tiempo establecido.
+      /**
+       * *funcion sin parametros
+       */
+      // function saludo() {
+      //   document.write(`Saludo`);
+      // }
+      // 2 segundos(2000) de tiempo transcurrido
+      // setTimeout(saludo, 2000);
+
+      /**
+       * *funcion con parametros
+       */
+      // function saludo(nombre) {
+      //   document.write(`Hola ${nombre}`);
+      // }
+      // setTimeout(saludo, 2000, "jorge");
+
+      /**
+       * *Cancelar el metodo
+       */
+      // function saludo(nombre) {
+      //   document.write(`Hola ${nombre}`);
+      // }
+      // let temporizadorID = setTimeout(saludo, 2000, "jorge");
+
+      // Con el metodo  clearTimeout no se mostrara el temporizador
+      // clearTimeout(temporizadorID);
+
+      // setInterval: llama a una función o ejecuta un fragmento de código de forma reiterada, con un retardo de tiempo fijo entre cada llamada.
+
+      // let numero = 5;
+      // function conteo() {
+      //   console.log(`Lanzamiento en ${numero} segundos`);
+      //   numero--;
+      //   // Condión para detener el conteo
+      //   if (numero === 0) {
+      //     clearInterval(lanzamiento);
+      //   }
+      // }
+      // let lanzamiento = setInterval(conteo, 1000);
+      /**
+       * *Temporizadores con funciones flecha(Uso mas habitual) */
+      // let numero = 5;
+      // let lanzamiento = setInterval(() => {
+      //   console.log(`Lanzamiento en ${numero} segundos`);
+      //   numero--;
+      //   // Condión para detener el conteo
+      //   if (numero === 0) {
+      //     clearInterval(lanzamiento);
+      //   }
+      // }, 1000);
+    </script>
+
+    <!-- <span id="cronometro">0</span>
+    <br />
+    <input type="button" id="boton1" value="detener" />
+
+    <script>
+      let reloj;
+      reloj = setInterval(procesar, 1000);
+      document.getElementById("boton1").addEventListener("click", presionBoton);
+
+      function procesar() {
+        let nro = parseInt(document.getElementById("cronometro").innerHTML);
+        nro++;
+        document.getElementById("cronometro").innerHTML = nro;
+      }
+
+      function presionBoton() {
+        if (document.getElementById("boton1").value == "detener") {
+          clearInterval(reloj);
+          document.getElementById("boton1").value = "continuar";
+        } else {
+          reloj = setInterval(procesar, 1000);
+          document.getElementById("boton1").value = "detener";
+        }
+      }
+    </script> -->
+    <!-- Confeccionar una página que luego de 10 segundos redireccione a otro sitio
+    empleando para ello la función setTimeout. -->
+    <!-- <p>
+      Esta página redireccionará al periódico www.lanacion.com.ar en 10 segundo;
+    </p> -->
+
+    <script>
+      /**
+       * *funcion con parametros
+       */
+      // let lanzar = setTimeout(() => {
+      //   window.location = "https://www.lanacion.com.ar";
+      // }, 1000);
+    </script>
+    <!-- Confeccionar una función que retorne una cadena con el día, mes y año actual. Utilizar una plantilla de cadena de caracteres para generarla. -->
+    <!--Todo: Metodo para retornar fecha -->
+    <script>
+      // function retornarFecha() {
+      //   const fecha = new Date();
+      //   return `${fecha.getDate()}\\${
+      //     fecha.getMonth() + 1
+      //   }\\${fecha.getFullYear()}`;
+      // }
+
+      // document.write(`Fecha:${retornarFecha()}`);
+    </script>
+    <!-- Confeccionar una función que reciba un vector y el tipo de lista HTML que se
+    debe generar. Por defecto generar una lista no ordenada. Retornar una cadena
+    con la lista HTML generada. -->
+    <script>
+      // function generarLista(vec, tipo = "<ul>") {
+      //   let lista = tipo;
+      //   for (let i = 0; i < vec.length; i++) lista += `<li>${vec[i]}</li>`;
+      //   if (tipo == "<ul>") lista += "</ul>";
+      //   else lista += "</ol>";
+      //   return lista;
+      // }
+
+      // const opciones1 = [
+      //   "opción 1",
+      //   "opción 2",
+      //   "opción 3",
+      //   "opción 4",
+      //   "opción 5",
+      // ];
+      // document.write(generarLista(opciones1));
+
+      // const opciones2 = ["opción a", "opción b", "opción c", "opción d"];
+      // document.write(generarLista(opciones2, "<ol>"));
+    </script>
+    <!-- Confeccionar una función que muestre la tabla de multiplicar. Si no llegan
+    datos muestra por defecto la tabla del 2. Por defecto se muestran 10
+    términos de la tabla salvo que se indique un valor en contrario. La función
+    debe tener 2 parámetros y ambos deben tener un valor por defecto. -->
+
+    <script>
+      // function tablaMultiplicar(tabla = 2, cantidad = 10) {
+      //   document.write(`Tabla del ${tabla}<br>`);
+      //   for (let i = 1; i <= cantidad; i++) {
+      //     let v = i * tabla;
+      //     document.write(`${tabla} * ${i} = ${v}<br>`);
+      //   }
+      // }
+      // tablaMultiplicar();
+      // tablaMultiplicar(3);
+      // tablaMultiplicar(5, 20);
+    </script>
+    
+  </body>
+</html>

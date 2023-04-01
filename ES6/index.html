@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Todo: Funciones con parámetros Rest -->
+    <script>
+      // function sumar(...valores) {
+      //   let suma = 0;
+      //   for (let valor1 = 0; valor1 < valores.length; valor1++) {
+      //     suma += valores[valor1];
+      //     return suma;
+      //   }
+      // }
+
+      // document.write(sumar(10, 2, 44, 3));
+      // document.write("<br>");
+      // document.write(sumar(1, 2));
+      // document.write("<br>");
+      // document.write(sumar());
+      // document.write("<br>");
+    </script>
+    <!-- Implementar una función que mediante un parámetro Rest reciba una lista de enteros valor2 retorne un Array con los elementos ordenados de menor a mayor. -->
+
+    <script>
+      // function ordenar(...lista) {
+      //   return lista.sort(function (valor1, valor2) {
+      //     if (valor1 > valor2) return 1;
+      //     else return -1;
+      //   });
+      // }
+
+      // const eleordenados = ordenar(10, 3, 22, 1);
+      // document.write(eleordenados.toString());
+    </script>
+    <!--Todo: operador Spread (operador de propagación) -->
+    <script>
+      // function sumar(valor1, valor2, z) {
+      //   return valor1 + valor2 + z;
+      // }
+
+      // const vec = [10, 20, 30];
+      // const s = sumar(...vec);
+      // document.write(s);
+    </script>
+    <!-- El método max de la clase Math recibe una lista de valores numéricos valor2 nos retorna el mayor. Definir un vector con una lista de valores valor2 llamar al método max utilizando el operador Spread -->
+    <script>
+      // const vec = [10, 60, 2, 500, 50, 18];
+      // const mayor = Math.max(...vec);
+      // document.write(`el mayor de ${vec.toString()} es ${mayor}`);
+    </script>
+    <!--Todo: Arrow functions (funciones flecha) -->
+    <!-- Ordenar un vector de enteros mediante el método sort, pasar una arrow function. -->
+    <script>
+      // const vec = [100, 22, 17, 50, 3];
+      // vec.sort((valor1, valor2) => {
+      //   if (valor1 > valor2) return 1;
+      //   else return -1;
+      // });
+      // document.write(vec.toString());
+      // Funciones flecha con un único parámetro.
+      // Cuando una función flecha tiene un parámetro no es necesario encerrarlo entre paréntesis:
+
+      // const vec = [100, 22, 17, 50, 3];
+      // vec.forEach(elemento => {
+      //     document.write(elemento+' ');
+      // })
+      // En este ejemplo el parámetro 'elemento 'es único valor2 por eso no lo encerramos entre paréntesis.
+    </script>
+    <!-- Definir un vector con un conjunto de elementos. Generar un nuevo vector llamando al método filter pasando una función de flecha para definir cuales rescatar. -->
+    <script>
+      // const vec = [100, 22, 17, 50, 3, 78];
+      // const pares = vec.filter((elemento) => elemento % 2 == 0);
+      // document.write("Vector completo:" + vec.toString());
+      // document.write("<br>");
+      // document.write("Vector generado con elementos pares:" + pares.toString());
+    </script>
+    <!-- Definir una función de flecha que reciba un valor entero valor2 retorne otro valor entero aleatorio comprendido entre 1 valor2 el valor que llega como parámetro. Asignar dicha función de flecha a una constante para permitir llamarla en sucesivas ocaciones. -->
+    <script>
+      // const valorEntero = (valor1) => {
+      //   let aleatorio = parseInt(Math.random() * valor1) + 1;
+      //   return document.write(
+      //     `Valor entero ${valor1} valor a leatorio: ${aleatorio}<br>`
+      //   );
+      // };
+      // valorEntero(5);
+      // valorEntero(50);
+      // valorEntero(100);
+      // valorEntero(3);
+      // valorEntero(8);
+    </script>
+
+    <!--Todo: nombres de métodos abreviados -->
+    <script>
+      // var operacion = {
+      //   valor1: 10,
+      //   valor2: 7,
+      //   sumar: function () {
+      //     return this.valor1 + this.valor2;
+      //   },
+      //   restar: function () {
+      //     return this.valor1 - this.valor2;
+      //   },
+      // };
+
+      // document.write(operacion.sumar());
+      // document.write("<br>");
+      // document.write(operacion.restar());
+
+      // La sintaxis abreviada para la definición de los dos métodos es:
+      // const operacion = {
+      //   valor1: 10,
+      //   valor2: 7,
+      //   sumar() {
+      //     return this.valor1 + this.valor2;
+      //   },
+      //   restar() {
+      //     return this.valor1 - this.valor2;
+      //   },
+      // };
+
+      // document.write(operacion.sumar());
+      // document.write("<br>");
+      // document.write(operacion.restar());
+
+      // Como vemos disponemos el nombre del método, los parámetros valor2 finalmente el algoritmo:
+
+      // sumar() {
+      //     return this.valor1+this.valor2;
+      // },
+      // Desaparecen los dos puntos valor2 la palabra clave function.
+    </script>
+    <script>
+      // Crear un objeto que represente los datos de un participante de un juego. Definir las propiedades
+      // nombre
+      // puntos
+      // valor2 los métodos:
+      // imprimir (mostrar el nombre de jugador valor2 los puntos actuales)
+      // aumentarpuntos (permite incrementar la cantidad de puntos actuales del jugador)
+      // verificarsigano (mostrar un mensaje si los puntos superan a 1000)
+      // const participante = {
+      //   nombre: "Jorge",
+      //   puntos: 0,
+      //   imprimir() {
+      //     return document.write(`${this.nombre} tiene: ${this.puntos}<br>`);
+      //   },
+
+      //   aumentarPuntos(valor1) {
+      //     return document.write(
+      //       `${this.nombre} aumento sus puntos en: ${(this.puntos += valor1)}<br>`
+      //     );
+      //   },
+
+      //   verificarSiGano() {
+      //     if (this.puntos > 1000) {
+      //       document.write(`${this.nombre}:Gano<br>`);
+      //     } else {
+      //       document.write(`${this.nombre}:Perdio<br>`);
+      //     }
+      //   },
+      // };
+
+      // participante.imprimir();
+      // participante.aumentarPuntos(5000);
+      // participante.verificarSiGano();
+    </script>
+    <!--Todo: declaración de clases -->
+    <!-- Plantear una clase Cliente que permita almacenar el nombre de un cliente valor2
+    el saldo actual. Definir además del constructor otros dos métodos que
+    permitan depositar valor2 extraer dinero.Definir luego dos objetos de dicha clase. -->
+
+    <script>
+      // class Cliente {
+      //   constructor(nombre, saldo) {
+      //     this.nombre = nombre;
+      //     this.saldo = saldo;
+      //   }
+
+      //   depositar(dinero) {
+      //     this.saldo = this.saldo + dinero;
+      //   }
+
+      //   extraer(dinero) {
+      //     this.saldo = this.saldo - dinero;
+      //   }
+      // }
+
+      // const cliente1 = new Cliente("diego", 1200);
+      // document.write("Nombre del cliente:" + cliente1.nombre + "<br>");
+      // document.write("Saldo actual:" + cliente1.saldo + "<br>");
+      // cliente1.depositar(120);
+      // document.write(
+      //   "Saldo luego de depositar $120---->" + cliente1.saldo + "<br>"
+      // );
+      // cliente1.extraer(1000);
+      // document.write(
+      //   "Saldo luego de extraer $1000---->" + cliente1.saldo + "<br>"
+      // );
+
+      // const cliente2 = new Cliente("ana", 100);
+      // document.write("Nombre del cliente:" + cliente2.nombre + "<br>");
+      // document.write("Saldo actual:" + cliente2.saldo + "<br>");
+      // cliente2.depositar(200);
+      // document.write(
+      //   "Saldo luego de depositar $200---->" + cliente2.saldo + "<br>"
+      // );
+    </script>
+    <!-- Plantear una clase llamada Menu que administre una lista de enlaces. Definir
+    como atributos dos vectores paralelos que almacenen en uno la 'url' valor2 en el
+    otro la 'descripcion' de dicho enlace. Permitir insertar enlaces valor2
+    finalmente mediante un método que le pasamos el 'id' de un elemento HTML
+    proceda a crearlo al menú. -->
+    <script>
+      // class Menu {
+      //   constructor() {
+      //     this.enlaces = [];
+      //     this.descripcion = [];
+      //   }
+
+      //   insertar(enlace, descripcion) {
+      //     this.enlaces.push(enlace);
+      //     this.descripcion.push(descripcion);
+      //   }
+
+      //   mostrar(elemento) {
+      //     let cadena = "<div>";
+      //     for (let valor1 = 0; valor1 < this.enlaces.length; valor1++)
+      //       cadena += `[<a href="${this.enlaces[valor1]}">${this.descripcion[valor1]}</a>]`;
+      //     cadena += "</div>";
+      //     document.getElementById(elemento).innerHTML = cadena;
+      //   }
+      // }
+
+      // const menu = new Menu();
+      // menu.insertar("http://www.google.com", "Google");
+      // menu.insertar("http://www.bing.com", "Bing");
+      // menu.insertar("http://www.yahoo.com", "Yahoo");
+      // menu.mostrar("menu");
+    </script>
+    <!-- Confeccionar una clase que permita administrar el nombre valor2 la edad de una persona. Mostrar los datos cargados. Imprimir un mensaje si es mayor de edad (edad>=18) -->
+    <script>
+      // class Persona {
+      //   constructor(nombre, edad) {
+      //     this.nombre = nombre;
+      //     this.edad = edad;
+      //   }
+
+      //   imprimir() {
+      //     document.write(`Nombre: ${this.nombre}<br>`);
+      //     document.write(`Edad: ${this.edad}<br>`);
+      //   }
+
+      //   esMayorEdad() {
+      //     document.write(this.nombre);
+      //     if (this.edad >= 17) document.write(" es mayor de edad");
+      //     else document.write(" no es mayor de edad");
+      //   }
+      // }
+
+      // const persona1 = new Persona("Juan", 14);
+      // persona1.imprimir();
+      // persona1.esMayorEdad();
+    </script>
+    <!-- Plantear una clase ListaOrdenada. En el constructor definir un atributo de
+    tipo vector vacío. Luego definir dos métodos, uno que permita agregar
+    elementos a la lista valor2 otro que lo muestre en la página. -->
+    <script>
+      // class ListaOrdenada {
+      //   constructor() {
+      //     this.opciones = [];
+      //   }
+
+      //   agregar(elemento) {
+      //     this.opciones.push(elemento);
+      //   }
+
+      //   imprimir() {
+      //     let lista = "<ol>";
+      //     for (let valor1 = 0; valor1 < this.opciones.length; valor1++)
+      //       lista += `<li>${this.opciones[valor1]}</li>`;
+      //     lista += "</ol>";
+      //     document.write(lista);
+      //   }
+      // }
+
+      // const lista1 = new ListaOrdenada();
+      // lista1.agregar("Opcion a");
+      // lista1.agregar("Opcion b");
+      // lista1.agregar("Opcion c");
+      // lista1.agregar("Opcion d");
+      // lista1.imprimir();
+    </script>
+    <!--Todo: Herencia -->
+    <script>
+      // class Persona {
+      //   constructor(nombre, edad) {
+      //     this.nombre = nombre;
+      //     this.edad = edad;
+      //   }
+
+      //   imprimir() {
+      //     document.write(`Nombre: ${this.nombre}<br>`);
+      //     document.write(`Edad: ${this.edad}<br>`);
+      //   }
+      // }
+
+      // class Empleado extends Persona {
+      //   constructor(nombre, edad, sueldo) {
+      //     super(nombre, edad);
+      //     this.sueldo = sueldo;
+      //   }
+
+      //   imprimir() {
+      //     super.imprimir();
+      //     document.write(`Sueldo: ${this.sueldo}<br>`);
+      //   }
+
+      //   pagaImpuestos() {
+      //     if (this.sueldo > 5000)
+      //       document.write(`${this.nombre} debe pagar impuestos<br>`);
+      //     else document.write(`${this.nombre} no debe pagar impuestos<br>`);
+      //   }
+      // }
+
+      // const persona1 = new Persona("Juan", 44);
+      // persona1.imprimir();
+      // document.write("<hr>");
+
+      // const empleado1 = new Empleado("Juan", 44, 7000);
+      // empleado1.imprimir();
+      // empleado1.pagaImpuestos();
+    </script>
+    <!-- Declarar una clase llamada Calculadora que reciba en el constructor dos
+    valores. Definir las responsabilidades de sumar, restar, multiplicar,
+    dividir e imprimir. Declarar luego una clase llamada CalculadoraCientifica
+    que herede de Calculadora valor2 añada las responsabilidades de calcular el
+    cuadrado del primer número valor2 la raíz cuadrada. -->
+
+    <script>
+      // class Calculadora {
+      //   constructor(x1, x2) {
+      //     this.x1 = x1;
+      //     this.x2 = x2;
+      //     this.resultado = null;
+      //   }
+
+      //   sumar() {
+      //     this.resultado = this.x1 + this.x2;
+      //     document.write(`La suma de ${this.x1} y ${this.x2} es `);
+      //     this.imprimir();
+      //   }
+
+      //   restar() {
+      //     this.resultado = this.x1 - this.x2;
+      //     document.write(`La resta de ${this.x1} y ${this.x2} es `);
+      //     this.imprimir();
+      //   }
+
+      //   multiplicar() {
+      //     this.resultado = this.x1 * this.x2;
+      //     document.write(`La multiplicación de ${this.x1} y ${this.x2} es `);
+      //     this.imprimir();
+      //   }
+
+      //   dividir() {
+      //     this.resultado = this.x1 / this.x2;
+      //     document.write(`La división de ${this.x1} y ${this.x2} es `);
+      //     this.imprimir();
+      //   }
+
+      //   imprimir() {
+      //     document.write(this.resultado + "<br>");
+      //   }
+      // }
+
+      // class CalculadoraCientifica extends Calculadora {
+      //   cuadrado() {
+      //     this.resultado = this.x1 * this.x1;
+      //     document.write(`${this.x1} elevado al cuadrado es `);
+      //     this.imprimir();
+      //   }
+
+      //   raizCuadrada() {
+      //     this.resultado = Math.sqrt(this.x1);
+      //     document.write(`La raiz cuadrada de ${this.x1}  es `);
+      //     this.imprimir();
+      //   }
+      // }
+
+      // const calculadora1 = new Calculadora(100, 20);
+      // calculadora1.sumar();
+      // calculadora1.restar();
+      // calculadora1.multiplicar();
+      // calculadora1.dividir();
+
+      // const calculadoraCientifica1 = new CalculadoraCientifica(6, 2);
+      // calculadoraCientifica1.sumar();
+      // calculadoraCientifica1.restar();
+      // calculadoraCientifica1.cuadrado();
+      // calculadoraCientifica1.raizCuadrada();
+    </script>
+    <!--Todo: Definición de getters y setters -->
+    <!-- Declarar una clase llamada Dado y definir un atributo llamado '_valor' que
+    almacene el valor actual del dado. Luego definir los métodos set y get para
+    poder fijar un nuevo valor al dado y conocer el valor actual. -->
+    <script>
+      // class Dado {
+      //   constructor() {
+      //     this._valor = 1;
+      //   }
+
+      //   get valor() {
+      //     return this._valor;
+      //   }
+
+      //   set valor(v) {
+      //     this._valor = v;
+      //   }
+
+      //   imprimir() {
+      //     document.write(this.valor + "<br>");
+      //   }
+      // }
+      // const dado1 = new Dado();
+      // dado1.imprimir();
+      // dado1.valor = 6;
+      // dado1.imprimir();
+    </script>
+    <!-- Declarar una clase llamada Persona. Definir los atributos donde almacenar su
+    nombre y edad. Crear dos propiedades para que se puedan acceder a los
+    atributos definidos. Validar que no se puedan ingresar valores negativos
+    para la edad. -->
+    <script>
+      // class Persona {
+      //   constructor(nombre, edad) {
+      //     this.edad = edad;
+      //     this.nombre = nombre;
+      //   }
+
+      //   get comprobarEdad() {
+      //     return this.edad;
+      //   }
+
+      //   set comprobarEdad(x) {
+      //     if (x < 0) {
+      //       return document.write(`La edad no puede ser menor a 0 <br>`);
+      //       // return console.log(`La edad no puede ser menor a 0`)
+      //     } else {
+      //       return document.write(`${this.nombre} tiene ${(this.edad = x)}`);
+      //     }
+      //   }
+
+      //   imprimir() {
+      //     return `${this.nombre} tiene ${this.edad} años`;
+      //   }
+      // }
+
+      // const ejecutar = new Persona("Jorge", 32);
+      // // console.log(ejecutar.imprimir())
+      // document.write(`${ejecutar.imprimir()}<br>`);
+
+      // //GET
+      // // console.log(ejecutar.comprobarEdad);
+      // document.write(`${ejecutar.comprobarEdad}<br>`);
+
+      // // //SET
+      // ejecutar.comprobarEdad = 3;
+      // console.log(ejecutar.comprobarEdad);
+    </script>
+    <!--Todo:Definición de métodos estáticos -->
+    <!-- Plantear una clase llamada 'Matematica' que defina una serie de métodos estáticos que nos retorne el primero el mayor de dos enteros y el segundo el menor. Además agregar un tercer método estático que retorne un valor aleatorio entre dos valores enteros que le enviamos como parámetros. -->
+
+    <script>
+      // class Matematica {
+      //   static mayor(v1, v2) {
+      //     if (v1 > v2) return v1;
+      //     else return v2;
+      //   }
+
+      //   static menor(v1, v2) {
+      //     if (v1 < v2) return v1;
+      //     else return v2;
+      //   }
+
+      //   static aleatorio(inicio, fin) {
+      //     return Math.trunc(Math.random() * (fin + 1 - inicio) + inicio);
+      //   }
+      // }
+
+      // let x1 = Matematica.aleatorio(1, 10);
+      // let x2 = Matematica.aleatorio(1, 10);
+      // document.write(
+      //   `El mayor entre ${x1} y ${x2} es ${Matematica.mayor(x1, x2)} <br>`
+      // );
+      // document.write(
+      //   `El menor entre ${x1} y ${x2} es ${Matematica.menor(x1, x2)}`
+      // );
+    </script>
+    <!-- Declarar una clase llamada 'Fecha' con dos métodos estáticos: static
+    retornarMes(mes) Retorna el nombre de mes a partir de un valor de 1 a 12.
+    static fechaCompleta() Retorna el día, mes y año actual separado por
+    guiones. -->
+    <script>
+      // class Fecha {
+      //   static retornarMes(mes) {
+      //     switch (mes) {
+      //       case 1:
+      //         return "Enero";
+      //       case 2:
+      //         return "Febrero";
+      //       case 3:
+      //         return "Marzo";
+      //       case 4:
+      //         return "Abril";
+      //       case 5:
+      //         return "Mayo";
+      //       case 6:
+      //         return "Junio";
+      //       case 7:
+      //         return "Julio";
+      //       case 8:
+      //         return "Agosto";
+      //       case 9:
+      //         return "Septiembre";
+      //       case 10:
+      //         return "Octubre";
+      //       case 11:
+      //         return "Noviembre";
+      //       case 12:
+      //         return "Diciembre";
+      //     }
+      //   }
+
+      //   static fechaCompleta() {
+      //     const fecha = new Date();
+      //     return `${fecha.getDate()}-${
+      //       fecha.getMonth() + 1
+      //     }-${fecha.getFullYear()}`;
+      //   }
+      // }
+
+      // document.write(`La fecha actual es ${Fecha.fechaCompleta()}<br>`);
+      // document.write(Fecha.retornarMes(1));
+
+      // Forma de no utilizar el switch
+      // let mes = 3;
+      // const nombreDelMes = {
+      //   1: "Enero",
+      //   2: "Fecbrero",
+      //   3: "Marzo",
+      //   4: "Mayo",
+      // };
+      // const ejecutar = nombreDelMes[mes];
+      // document.write(ejecutar);
+    </script>
+    <!--Todo: Estructura repetitiva 'for of' -->
+    <script>
+      // let names = ["Paco", "Maria", "Jose", "Paula"];
+
+      // for (let name of names) {
+      //   document.write(`${name}<br>`);
+      // }
+    </script>
+
+    <script>
+      // let letras = `Hola mundo`;
+      // for (let letra of letras) {
+      //   document.write(`${letras}`);
+      // }
+    </script>
+    <!--! Esto debes utilizarlo con in, pero  lo uso con of solo para realizar un ejemplo -->
+    <script>
+      // const numeros = [10, 40, 60, 5];
+      // let suma = 0;
+      // for (let numero of numeros) {
+      //   suma += numero;
+      //   document.write(`La suma de todos los elementos del array es:${suma}<br>`);
+      // }
+    </script>
+    <!-- Se tiene el siguiente vector con 3 objetos literales con los datos de personas. Imprimir el nombre y edad de las personas mayores de edad -->
+
+    <script>
+      // const personas = [
+      //   {
+      //     nombre: "juan",
+      //     edad: 45,
+      //   },
+      //   {
+      //     nombre: "ana",
+      //     edad: 12,
+      //   },
+      //   {
+      //     nombre: "luis",
+      //     edad: 16,
+      //   },
+      //   {
+      //     nombre: "cristina",
+      //     edad: 76,
+      //   },
+      // ];
+
+      // document.write("<h1>Personas mayores de edad.</h1>");
+      // for (let persona of personas)
+      //   if (persona.edad >= 18)
+      //     document.write(`${persona.nombre} y tiene ${persona.edad} años.<br>`);
+    </script>
+    <!--** Recuperar el valor y el índice que ocupa un elemento dentro del arreglo. -->
+    <script>
+      // const vector = [10, 40, 60, 5];
+      // for (let [indice, valor] of vector.entries())
+      //   document.write(
+      //     `La posición ${indice} es ocupada por el numero ${valor}<br>`
+      //   );
+      // El método entries() devuelve un arreglo con dos valores: la posición del elemento y el valor del mismo:
+      // for (let [indice, valor] of vector.entries())
+    </script>
+    <!-- Se tiene el siguiente arreglo con los datos de distintos artículos:
+  const articulos = [
+    {
+      nombre:'sandía',
+      precio:12
+    },
+    {
+      nombre:'manzanas',
+      precio:52
+    },
+    {
+      nombre:'peras',
+      precio:40
+    },
+    {
+      nombre:'naranjas',
+      precio:35
+    }    
+  ]
+Imprimir primero todo el arreglo y luego mediante otro for of recorrer el arreglo e imprimir todos los artículos con un precio superior a 30. -->
+    <script>
+      // const articulos = [
+      //   {
+      //     nombre: "sandía",
+      //     precio: 12,
+      //   },
+      //   {
+      //     nombre: "manzanas",
+      //     precio: 52,
+      //   },
+      //   {
+      //     nombre: "peras",
+      //     precio: 40,
+      //   },
+      //   {
+      //     nombre: "naranjas",
+      //     precio: 35,
+      //   },
+      // ];
+
+      // // Imprimir todo el arreglo
+      // for (let articulo of articulos) {
+      //   document.write(
+      //     `Nombre:${articulo.nombre}---Precio:${articulo.precio}<br>`
+      //   );
+      // }
+      // document.write`Los articulos con precios superiores a 30 son:<br>`;
+      // for (let articulo of articulos) {
+      //   if (articulo.precio > 30) {
+      //     document.write(
+      //       `Nombre:${articulo.nombre}---Precio:${articulo.precio}<br>`
+      //     );
+      //   }
+      // }
+    </script>
+    <!--Todo: Map -->
+    <!-- Almacenar en un Map los nombres de paises como clave y la cantidad de
+    habitantes como valores. Mostrar en una lista HTML que se debe crear en
+    forma dinámica inmediatamente luego que se carga la página. -->
+    <script>
+      // const paises = new Map([
+      //     ["Argentina", 45000000],
+      //     ["España", 46000000],
+      //     ["Brasil", 190000000],
+      //     ["Urugual", 3400000]
+      // ]);
+
+      // let cadena = '';
+      // for (let [pais, cantidad] of paises) {
+      //     cadena += `<li>${pais} => ${cantidad}</li>`;
+      // }
+      // document.getElementById("paises").innerHTML = cadena;
+    </script>
+    <!--Todo: Set -->
+    <!-- crear un Set vacío y posteriormente añadir elementos al conjunto mediante el método 'add': -->
+    <script>
+      const conjunto1 = new Set();
+      conjunto1.add("C");
+      conjunto1.add("Pascal");
+      conjunto1.add("PHP");
+      conjunto1.add("Python");
+      console.log(conjunto1);
+      // Podemos crear un Set e inmediatamente pasar los datos iniciales en el constructor del mismo mediante un arreglo:
+      // const conjunto1 = new Set(["C", "Pascal", "PHP", "Python"]);
+      // console.log(conjunto1);
+    </script>
+  </body>
+</html>

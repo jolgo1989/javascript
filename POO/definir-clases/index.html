@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       *todo:Estructura de una clase
+       */
+      //   class Persona {
+      /**
+       *todo:función constructora con sus respectivos parametros
+       */
+      //     constructor(nombre, apellido, edad) {
+      /**
+       *todo:se instancian los parametros
+       */
+      //      this.nombre = nombre;
+      //      this.apellido = apellido;
+      //      this.edad = edad;
+      //     }
+      /**
+       *todo:Metodos
+       */
+      //     saludar() {
+      //       return (
+      //         "Hola , me llamo" +
+      //        this.nombre +
+      //         " " +
+      //        this.apellido +
+      //         " y tengo " +
+      //        this.edad
+      //       );
+      //     }
+      //   }
+      /**
+       *todo:se intancia(Se llaman los objetos) el objeto
+       */
+      //   const juan = new Persona(" Juan", "Garcia", 24);
+      //   document.write(juan.saludar());
+    </script>
+
+    <!-- Desarrollare una clase que represente un cliente de un banco. -->
+    <script>
+      // class Cliente {
+      //   constructor(nombre, saldo) {
+      //    this.nombre = nombre;
+      //    this.saldo = saldo;
+      //   }
+
+      //   depositar(dinero) {
+      //     return this.saldo += dinero);
+      //   }
+
+      //   extraer(dinero) {
+      //     return this.saldo -= dinero);
+      //   }
+      // }
+
+      // const respuesta = new Cliente("Jorge", 3000);
+      // document.write("Nombre del cliente: " + respuesta.nombre + "<br>");
+      // document.write("Saldo actual: " + respuesta.saldo + "<br>");
+      // respuesta.depositar(120);
+      // document.write(
+      //   "Saldo luego de depositar $120---->" + respuesta.saldo + "<br>"
+      // );
+      // respuesta.extraer(1000);
+      // document.write("Saldo luego de extraer $1000---->" + respuesta.saldo);
+    </script>
+
+    <!-- Confeccionar una clase llamada suma, que contenga dos atributos (valor1,
+    valor2) y tres métodos: cargarvalor1, cargarvalor2 y retornarresultado.
+    Implementar la clase suma. La definición de un objeto de la clase que deben
+    plantear es:
+    let s=new suma();
+    s.primerValor(10); 
+    s.segundoValor(20);
+    document.write('La suma de los dos valores es:'+s.retornarResultado()); -->
+
+    <script>
+      // class Suma {
+      //   constructor(valor1, valor2) {
+      //    this.valor1 = valor1;
+      //    this.valor2 = valor2;
+      //   }
+
+      //   primerValor(valor1) {
+      //     return this.valor1 = valor1;
+      //   }
+      //   segundoValor2(valor2) {
+      //     return this.valor2 = valor2;
+      //   }
+
+      //   retornarResultado() {
+      //     returnthis.valor1 +this.valor2;
+      //   }
+      // }
+
+      // const respuesta = new Suma(10, 20);
+      // document.write(
+      //   `La suma de 10 y 20 es: ${respuesta.retornarResultado()} <br>`
+      // );
+
+      // respuesta.primerValor(70);
+      // respuesta.segundoValor2(30);
+
+      // document.write(`La suma de 70 y 30 es: ${respuesta.retornarResultado()}`);
+    </script>
+
+    <script>
+      // class Automovil {
+      //   constructor(marca, color, precio) {
+      //    this.marca = marca;
+      //    this.color = color;
+      //    this.precio = precio;
+      //   }
+
+      //   encender() {
+      //     return `El auto $this.marca} es $this.color} y tiene un valor de $this.precio}`;
+      //   }
+      // }
+
+      // const mostrar = new Automovil("Ferrari", "Rojo", 2000);
+
+      // document.write(mostrar.encender());
+    </script>
+
+    <script>
+      // Implementar una clase llamada Persona que tendrá como propiedades su nombre
+      // y edad. Plantear un constructor donde debe llegar como parámetros el nombre
+      // y la edad. Definir además dos métodos, uno que imprima las propiedades y
+      // otro muestre si es mayor de edad.
+      // class Persona {
+      //   constructor(nombre, edad) {
+      //    this.nombre = nombre;
+      //    this.edad = edad;
+      //   }
+
+      //   nombreEdad() {
+      //     return `El nombre de la persona es $this.nombre} y la edad es $this.edad}`;
+      //   }
+
+      //   mayorEdad() {
+      //     if this.edad > 18) {
+      //       return `La persona es mayor de edad`;
+      //     } else {
+      //       return `La persona no es mayor de edad`;
+      //     }
+      //   }
+      // }
+
+      // const mostrar = new Persona("Jorge", 32);
+      // document.write(`${mostrar.nombreEdad()} <br>`);
+      // document.write(mostrar.mayorEdad());
+    </script>
+
+    <!-- Implementar una clase que cargue los lados de un triángulo e implemente los siguientes métodos: inicializar las propiedades, imprimir el valor del lado mayor y otro método que muestre si es equilátero o no -->
+
+    <script>
+      // class Triangulo {
+      //   constructor(lado1, lado2, lado3) {
+      //    this.lado1 = lado1;
+      //    this.lado2 = lado2;
+      //    this.lado3 = lado3;
+      //   }
+
+      //   imprimirLado() {
+      //     if this.lado1 >this.lado2 ||this.lado1 >this.lado3) {
+      //       return `El lado mayor es $this.lado1}`;
+      //     } else if this.lado2 >this.lado1 ||this.lado2 >this.lado3) {
+      //       return `El lado mayor es $this.lado2}`;
+      //     } else {
+      //       return `El lado mayor es $this.lado3}`;
+      //     }
+      //   }
+
+      //   equilatero() {
+      //     if this.lado1 ===this.lado2 &&this.lado1 ===this.lado3) {
+      //       return `El triangulo es equilatero`;
+      //     } else {
+      //       return `El triangulo no es equilatero`;
+      //     }
+      //   }
+      // }
+
+      // const imprimir = new Triangulo(10, 10, 10);
+      // document.write(`${imprimir.imprimirLado()} <br>`);
+      // document.write(imprimir.equilatero());
+    </script>
+
+    <script>
+      // Implementar una clase que cargue los lados de un triángulo e implemente los siguientes métodos: inicializar las propiedades, imprimir el valor del lado mayor y otro método que muestre si es equilátero o no.
+      // Plantear el constructor principal que reciba los valores de los lados y un segundo constructor que permita ingresar por teclado los tres lados.
+
+      // class Triangulo {
+      //   constructor(lado1, lado2, lado3) {
+      //    this.lado1 = lado1;
+      //    this.lado2 = lado2;
+      //    this.lado3 = lado3;
+      //   }
+
+      //   imprimirLado() {
+      //     if this.lado1 >this.lado2 &&this.lado1 >this.lado3) {
+      //       return `El lado mayor es $this.lado1}`;
+      //     } else if this.lado2 >this.lado1 &&this.lado2 >this.lado3) {
+      //       return `El lado mayor es $this.lado2}`;
+      //     } else {
+      //       return `El lado mayor es $this.lado3}`;
+      //     }
+      //   }
+
+      //   equilatero() {
+      //     if this.lado1 ===this.lado2 &&this.lado1 ===this.lado3) {
+      //       return `El triangulo es equilatero`;
+      //     } else {
+      //       return `El triangulo no es equilatero`;
+      //     }
+      //   }
+      // }
+      // let num1 = parseInt(prompt("Ingrese un valor"));
+      // let num2 = parseInt(prompt("Ingrese un valor"));
+      // let num3 = parseInt(prompt("Ingrese un valor"));
+
+      // const imprimir = new Triangulo(num1, num2, num3);
+      // document.write(`${imprimir.imprimirLado()} <br>`);
+      // document.write(`${imprimir.equilatero()} <br>`);
+
+      // const imprimir2 = new Triangulo(10, 10, 10);
+      // document.write(`${imprimir2.imprimirLado()} <br>`);
+      // document.write(`${imprimir2.equilatero()} `);
+    </script>
+
+    <script>
+      // Implementar una clase llamada Alumno que tenga como propiedades su nombre y su nota. Al constructor llega su nombre y nota.
+      // Imprimir el nombre y su nota. Mostrar un mensaje si está regular (nota mayor o igual a 4)Definir dos objetos de la clase Alumno.
+
+      // class Alumno {
+      //   constructor(nombre, nota) {
+      //    this.nombre = nombre;
+      //    this.nota = nota;
+      //   }
+
+      //   imprimir() {
+      //     return `$this.nombre} tiene una nota de $this.nota}`;
+      //   }
+
+      //   regular() {
+      //     if this.nota > 4) {
+      //       return `Alumno en estado regular`;
+      //     } else {
+      //       return `Alumno en estado no regular`;
+      //     }
+      //   }
+      // }
+
+      // const alumno1 = new Alumno("Jorge", 3.23);
+      // document.write(`${alumno1.imprimir()} <br>`);
+      // document.write(`${alumno1.regular()} <br>`);
+
+      // const alumno2 = new Alumno("Allan", 5);
+      // document.write(`${alumno2.imprimir()} <br>`);
+      // document.write(`${alumno2.regular()}`);
+    </script>
+
+    <script>
+      // Cofeccionar una clase que represente un punto en el plano, la coordenada de un punto en el plano
+      //está dado por dos valores enteros x e y.
+      //  Al constructor llega la ubicación del punto en x e y.
+      // Implementar un método que retorne un String que indique en que cuadrante se ubica dicho punto. (1º Cuadrante si x> 0 Y y > 0 , 2º Cuadrante: x < 0 Y y > 0, 3º Cuadrante: x < 0 Y y < 0, 4º Cuadrante: x > 0 Y y < 0)
+      // Si alguno o los dos valores son cero luego el punto se encuentra en un eje.
+      // Definir luego 5 objetos de la clase Punto en cada uno de los cuadrantes y uno en un eje.
+
+      // class PlanoCartesiano {
+      //   constructor(x, y) {
+      //    this.x = x;
+      //    this.y = y;
+      //   }
+
+      //   ubicacion() {
+      //     if this.x > 0 &&this.y > 0) {
+      //       document.write("Cuadrante #1");
+      //     } else if this.x < 0 &&this.y > 0) {
+      //       document.write("Cuadrante #2");
+      //     } else if this.x < 0 &&this.y < 0) {
+      //       document.write("Cuadrante #3");
+      //     } else if this.x > 0 &&this.y < 0) {
+      //       document.write("Cuadrante #4");
+      //     } else {
+      //       document.write("El cuadrante se encuentra en un eje ");
+      //     }
+      //   }
+      // }
+
+      // const imprimir1 = new PlanoCartesiano(12, 10);
+      // document.write(`${imprimir1.ubicacion()} <br>`);
+      // const imprimir2 = new PlanoCartesiano(-12, 10);
+      // document.write(`${imprimir2.ubicacion()} <br>`);
+      // const imprimir3 = new PlanoCartesiano(-12, -10);
+      // document.write(`${imprimir3.ubicacion()}<br>`);
+      // const imprimir4 = new PlanoCartesiano(12, -10);
+      // document.write(`${imprimir4.ubicacion()} <br>`);
+      //  const imprimir5 = new PlanoCartesiano(0, 0);
+      // document.write(`${imprimir5.ubicacion()} `);
+    </script>
+
+    <script>
+      // operaciones basicas con clases
+      class OperacionesBasicas {
+        constructor(a, b) {
+         this.a = a;
+         this.b = b;
+        }
+        suma(a) {
+         this.a += a;
+        }
+
+        mul(b) {
+         this.b *= b;
+        }
+      }
+
+      const imprimir = new OperacionesBasicas(2, 4);
+      document.write(
+        ` Numeroros ingresados ${imprimir.a} y ${imprimir.b} <br> `
+      );
+      //Metodo para sumar
+      imprimir.suma(3);
+      document.write(`la suma de 3 y 2 es: ${imprimir.a}  <br> `);
+      //MEtodo para multiplicar
+      imprimir.mul(2);
+      document.write(`La multiplicación de 2 por 4 es: ${imprimir.b}`);
+    </script>
+
+    <!-- ?Como lo hzo dorian -->
+    <script>
+      // class Book {
+      //   constructor(title, author, year, gender) {
+      //     this.title = title;
+      //     this.author = author;
+      //     this.year = year;
+      //     this.gender = gender;
+      //   }
+
+      //   getAutors() {
+      //     return this.author;
+      //   }
+
+      //   getGender() {
+      //     return this.gender;
+      //   }
+      //   bookInfo() {
+      //     return `El titulo del libro es ${this.title}, su autor es ${this.author}, su años es del ${this.year} y su genero es del ${this.gender} <br>`;
+      //   }
+      // }
+
+      // /**
+      //  *Todo: Metodo para guardar los libros en un array
+      //  */
+
+      // //Se crea un array vacio
+      // let books = [];
+
+      // //Metodo length parra recorres el array
+      // while (books.length < 1) {
+      //   let title = prompt("Introduce el título del libro");
+      //   let author = prompt("Introduce el autor del libro");
+      //   let year = prompt("Introduce el año del libro");
+      //   let gender = prompt("Introduce el género del libro").toLowerCase();
+
+      //   if (
+      //     title != "" &&
+      //     author != "" &&
+      //     //Metodo para validar si el dato introducido en el prompt es de tipo Int o String(Number.isNaN())
+      //     Number.isNaN(year) &&
+      //     //Metodo para validar si el año posee mas de 4 digitos
+      //     year.length == 4 &&
+      //     //Metodo para validar si el genero es de aventura, terror o fantasia
+      //     (gender == "aventura" || gender == "terror" || gender == "fantasía")
+      //   ) {
+      //     //Metodo para guardar los libros en el array
+      //     books.push(new Book(title, author, year, gender));
+      //   }
+      // }
+
+      // //Mostrar todos los libros
+      // const showAllBook = () => {
+      //   console.log(books);
+      // };
+
+      // /**
+      //  *Todo: Metodo para organizar los autores alfabeticamente
+      //  */
+      // const showAutors = () => {
+      //   let authors = [];
+
+      //   for (const book of books) {
+      //     authors.push(book.getAutors());
+      //   }
+
+      //   console.log(authors.sort());
+      // };
+
+      // /**
+      //  *Todo: Metodo para mostrar los generos de los libros
+      //  */
+      // const showGender = () => {
+      //   const gender = prompt("introduce el a buscar");
+      //   for (const book of books) {
+      //     if (book.getGender() === gender) {
+      //       console.log(book.bookInfo());
+      //     }
+      //   }
+      // };
+
+      //showAllBooks();
+      //showAutors();
+      // showGender();
+    </script>
+
+    <!--Todo: Todo:Subclaase -->
+    <script>
+      // Se crea la clase
+      // class Player {
+      //   constructor(nombre, colorSombrero) {
+      //     this.nombre = nombre;
+      //     this.colorSombrero = colorSombrero;
+      //   }
+
+      //   saltar() {}
+      //   correr() {}
+      //   saludar() {
+      //     return `Hola soy ${this.nombre}, mi sombrero es ${this.colorSombrero}`;
+      //   }
+      // }
+
+      // // Se crea la subclase con la palabras reservada extends la misma que poermite eredar las propiedades de la clase player
+      // class Pet extends Player {
+      //   constructor(nombre, colorSombrero, colorPiel) {
+      //     //Se indica los atributos que vamos a heredar con la palabra reservada super
+      //     super(nombre, colorSombrero);
+      //     this.colorPiel = colorPiel;
+      //   }
+      //   saludarPet() {
+      //     return ` ${this.saludar()} y mi color de piel es ${this.colorPiel}`;
+      //   }
+      // }
+
+      // const player1 = new Player("Mario", "Rojo");
+      // const player2 = new Player("Luigui", "Verde");
+      // const player3 = new Pet("Yoshi", "Transparente", "Verde");
+
+      // document.write(`${player1.saludar()}<br>`);
+      // document.write(`${player2.saludar()}<br>`);
+      // document.write(player3.saludarPet());
+    </script>
+
+    <!-- Plantear una clase Persona que contenga dos propiedades: nombre y edad.
+    Definir como responsabilidades el constructor que reciba el nombre y la
+    edad.
+    definir un objeto de la clase Persona y llamar a sus métodos. 
+    Declarar una segunda clase llamada Empleado que
+    herede de la clase Persona y agregue una propiedad sueldo y muestre si debe
+    pagar impuestos (sueldo superior a 3000) -->
+    <script>
+      // class Persona {
+      //   constructor(nombre, edad) {
+      //     this.nombre = nombre;
+      //     this.edad = edad;
+      //   }
+
+      //   imprimirDatosPersona() {
+      //     return `Nombre:${this.nombre}<br> Edad: ${this.edad}<br>`;
+      //   }
+      // }
+
+      // class Empleado extends Persona {
+      //   constructor(nombre, edad, sueldo) {
+      //     super(nombre, edad);
+      //     this.sueldo = sueldo;
+      //   }
+
+      //   impuesto() {
+      //     if (this.sueldo > 300) {
+      //       return `${this.imprimirDatosPersona()}Debe pagar impuesto`;
+      //     } else {
+      //       return `${this.imprimirDatosPersona()}No debe pagar impuesto`;
+      //     }
+      //   }
+      // }
+
+      // const ejecutarPersona = new Persona("Jorge", "32");
+      // const ejecutarEmpleado = new Empleado("Allan", "3", 200);
+      // document.write(
+      //   `Datos de la persona<br>${ejecutarPersona.imprimirDatosPersona()}`
+      // );
+      // document.write(`Datos del colaborador<br>${ejecutarEmpleado.impuesto()}`);
+    </script>
+    <!-- Declarar una clase llamada Calculadora que reciba en el constructor dos
+    valores de tipo Double. Definir las responsabilidades de sumar, restar,
+    multiplicar, dividir e imprimir. 
+    Declarar luego una clase llamada CalculadoraCientifica que herede de Calculadora y añada las
+    responsabilidades de calcular el cuadrado del primer número y la raíz
+    cuadrada. -->
+    <script>
+      // class Calculadora {
+      //   constructor(primerValor, segundoValor) {
+      //     this.primerValor = primerValor;
+      //     this.segundoValor = segundoValor;
+      //   }
+      //   suma() {
+      //     return `Resultado: ${this.primerValor + this.segundoValor}<br>`;
+      //   }
+
+      //   resta() {
+      //     return this.primerValor - this.segundoValor;
+      //   }
+
+      //   mult() {
+      //     return this.primerValor * this.segundoValor;
+      //   }
+
+      //   div() {
+      //     return this.primerValor / this.segundoValor;
+      //   }
+      // }
+
+      // class calculadoraCientifica extends Calculadora {
+      //   constructor(primerValor, segundoValor, calcularCuadradoRaiz) {
+      //     super(primerValor, segundoValor);
+      //     this.calcularCuadradoRaiz = calcularCuadradoRaiz;
+      //   }
+
+      //   calcularRaizCuadrado() {
+      //     return `${this.suma()}Resultado: ${Math.pow(
+      //       this.primerValor,
+      //       2
+      //     )}<br>Resultado:${Math.sqrt(this.primerValor)}`;
+      //   }
+      // }
+
+      // const ejecutar1 = new Calculadora(10.0, 2.0);
+      // document.write(
+      //   `Prueba de la clase Calculadora (suma de dos números)<br>${ejecutar1.suma()}`
+      // );
+
+      // const ejecutar2 = new calculadoraCientifica(10.0, 2.0);
+      // document.write(
+      //   `Prueba de la clase Calculadora Cientrífica (suma de dos números y el cuadrado y la raiz del primero)<br>${ejecutar2.calcularRaizCuadrado()}`
+      // );
+    </script>
+    <!-- Declarar una clase Dado que genere un valor aleatorio entre 1 y 6, mostrar
+    su valor. Crear una segunda clase llamada DadoRecuadro que genere un valor
+    entre 1 y 6, mostrar el valor recuadrado en asteríscos. Utilizar la herencia
+    entre estas dos clases. -->
+    <script>
+      // class Dado {
+      //   constructor(valor) {
+      //     this.valor = valor;
+      //   }
+
+      //   /**
+      //    * Todo: Formas de redondear un numero aleatorio : (let dato = Math.round(Math.random() * this.valor) + 1), (let dato = parseInt(Math.random() * this.valor) + 1)
+      //    *
+      //    */
+
+      //   imprimirValorAleatorio() {
+      //     let dato = Math.round(Math.random() * this.valor) + 1;
+      //     return `${dato}`;
+      //   }
+      // }
+
+      // class DadoRecuadro extends Dado {
+      //   imprimirDadoRecuadro() {
+      //     return `${this.imprimirValorAleatorio()}`;
+      //   }
+      // }
+
+      // const ejecutar1 = new Dado(6);
+      // const ejecutar2 = new DadoRecuadro(6);
+      // document.write(`${ejecutar1.imprimirValorAleatorio()}<br>`);
+      // document.write(`*** <br>*${ejecutar2.imprimirDadoRecuadro()}* <br>***`);
+    </script>
+
+    <!-- Desarrollaremos una clase que represente un hipervínculo y luego definiremos
+    un vector con componentes de tipo hipervinculo. 
+    La clase hipervínculo y donde definimos objetos de dicha clase -->
+    <script>
+      // class Hipervinculo {
+      //   constructor(direccion, titulo) {
+      //     this.direccion = direccion;
+      //     this.titulo = titulo;
+      //   }
+
+      //   retornarhipervinculo() {
+      //     let cadena;
+      //     cadena = "<a href=" + this.direccion + ">" + this.titulo + "</a>";
+      //     return cadena;
+      //   }
+      // }
+
+      // let vector = new Array(3);
+      // vector[0] = new Hipervinculo("https://www.google.com", "google");
+      // vector[1] = new Hipervinculo("https://www.msn.com", "msn");
+      // vector[2] = new Hipervinculo("https://www.yahoo.com", "yahoo");
+      // for (let f = 0; f < vector.length; f++) {
+      //   document.write(vector[f].retornarhipervinculo());
+      //   document.write("<br>");
+      // }
+    </script>
+    <!-- Confeccionar una clase persona que permita almacenar el nombre y la edad. Luego definir un vector de 4 componentes de tipo persona. Imprimir el nombre de la persona de mayor edad; decir también si hay más de una persona con la edad mayor. -->
+    <script>
+      class Persona {
+        constructor(nombre, edad) {
+          this.nombre = nombre;
+          this.edad = edad;
+        }
+
+        mayorEdad() {
+          return `${this.nombre} es la perona de mayor edad con ${this.edad}<br>`;
+        }
+      }
+
+      let vector = [4];
+      vector[0] = new Persona("Jorge", 32);
+      vector[1] = new Persona("Dilia", 30);
+      vector[2] = new Persona("Allan", 3);
+      vector[3] = new Persona("Monche", 23);
+      let posmayor = 0;
+
+      for (let i = 0; i < vector.length; i++) {
+        if (vector[i].edad > vector[posmayor].edad) {
+          posmayor = i;
+        }
+      }
+
+      document.write("Personas con mayor edad:<br>");
+      for (let i = 0; i < vector.length; i++) {
+        if (vector[i].edad === vector[posmayor].edad) {
+          document.write(vector[i].mayorEdad());
+        }
+      }
+    </script>
+  </body>
+</html>

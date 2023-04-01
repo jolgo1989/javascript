@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Clase Date
+      let fecha = new Date();
+      document.write("Hoy es ");
+      document.write(fecha.getDate() + "/");
+      document.write(fecha.getMonth() + "/");
+      document.write(fecha.getFullYear());
+      document.write("<br>");
+      document.write("Es la hora");
+      document.write(fecha.getHours() + ":");
+      document.write(fecha.getMinutes() + ":");
+      document.write(fecha.getSeconds());
+
+      // Confeccionar un programa que muestre en que cuatrimestre del año nos encontramos. Para esto obtener el mes.
+
+      // let fecha = new Date();
+      // let mes = fecha.getMonth() + 1;
+      // if (mes < 4) {
+      //   document.write(
+      //     "Nos encontramos en el primer cuatrimestre porque estamos en el mes :" +
+      //       mes
+      //   );
+      // } else if (mes < 8) {
+      //   document.write(
+      //     "Nos encontramos en el segundo cuatrimestre porque estamos en el mes:" +
+      //       mes
+      //   );
+      // } else {
+      //   document.write(
+      //     "Nos encontramos en el tercer cuatrimestre porque estamos en el mes:" +
+      //       mes
+      //   );
+      // }
+
+      // Confeccionar una función que nos retorne un string con el siguiente formato:
+      // Hoy es Lunes 9 de Agosto de 2021
+
+      // function retornarDiaSemana(dia) {
+      //   switch (dia) {
+      //     case 0:
+      //       return "Domingo";
+      //     case 1:
+      //       return "Lunes";
+      //     case 2:
+      //       return "Martes";
+      //     case 3:
+      //       return "Miércoles";
+      //     case 4:
+      //       return "Jueves";
+      //     case 5:
+      //       return "Viernes";
+      //     case 6:
+      //       return "Sábado";
+      //     default:
+      //       return "día inválido";
+      //   }
+      // }
+
+      // function retornarMes(mes) {
+      //   switch (mes) {
+      //     case 0:
+      //       return "Enero";
+      //     case 1:
+      //       return "Febrero";
+      //     case 2:
+      //       return "Marzo";
+      //     case 3:
+      //       return "Abril";
+      //     case 4:
+      //       return "Mayo";
+      //     case 5:
+      //       return "Junio";
+      //     case 6:
+      //       return "Julio";
+      //     case 7:
+      //       return "Agosto";
+      //     case 8:
+      //       return "Septiembre";
+      //     case 9:
+      //       return "Octubre";
+      //     case 10:
+      //       return "Noviembre";
+      //     case 11:
+      //       return "Diciembre";
+      //     default:
+      //       return "mes inválido";
+      //   }
+      // }
+
+      // function retornarFechaTexto() {
+      //   let fecha = new Date();
+      //   let cadena =
+      //     "Hoy es " +
+      //     retornarDiaSemana(fecha.getDay()) +
+      //     " " +
+      //     fecha.getDate() +
+      //     " de " +
+      //     retornarMes(fecha.getMonth()) +
+      //     " de " +
+      //     fecha.getFullYear();
+      //   return cadena;
+      // }
+
+      // document.write(retornarFechaTexto());
+
+      // Clase Array
+
+      // Crear un vector para almacenar los cinco sueldos de operarios y luego mostrar el total de gastos en sueldos (cada actividad en una función)
+      // function cargar(sueldos) {
+      //   for (let i = 0; i < sueldos.length; i++) {
+      //     let v = prompt("Ingrese sueldo:");
+      //     sueldos[i] = parseInt(v);
+      //   }
+      // }
+
+      // function calcularGastos(sueldos) {
+      //   let total = 0;
+      //   for (let i = 0; i < sueldos.length; i++) {
+      //     total = total + sueldos[i];
+      //   }
+      //   document.write("Listado de sueldos<br>");
+      //   for (let i = 0; i < sueldos.length; i++) {
+      //     document.write(sueldos[i] + "<br>");
+      //   }
+      //   document.write("Total de gastos en sueldos:" + total);
+      // }
+
+      // let sueldos = new Array(5);
+      // cargar(sueldos);
+      // calcularGastos(sueldos);
+
+      // Crear un vector con elementos de tipo string. Almacenar los meses del año. En una función solicitar el ingreso de un número entre 1 y 12. Mostrar a qué mes corresponde y cuántos días tiene dicho mes.
+
+      //  function mostrarFecha(meses, dias) {
+      //         let num = parseInt(prompt('Ingrese número de mes:'));
+      //         document.write('Corresponde al mes:' + meses[num - 1]);
+      //         document.write('<br>');
+      //         document.write('Tiene ' + dias[num - 1] + ' días');
+      //     }
+
+      //     let meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+      //     let dias = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+      //     mostrarFecha(meses, dias);
+
+      //     Desarrollar un programa que permita ingresar un vector de 8 elementos, e informe:
+      //     El valor acumulado de todos los elementos del vector.
+      //     El valor acumulado de los elementos del vector que sean mayores a 36.
+      //     Cantidad de valores mayores a 50.
+
+      // function cargar(vec) {
+      //   for (let i = 0; i < vec.length; i++) {
+      //     let valor = prompt("Ingrese componente:");
+      //     vec[i] = parseInt(valor);
+      //   }
+      // }
+
+      // function sumar(vec) {
+      //   let suma = 0;
+      //   for (let i = 0; i < vec.length; i++) {
+      //     suma = suma + vec[i];
+      //   }
+      //   document.write("Valor acumulado de las componentes:" + suma + "<br>");
+      // }
+
+      // function sumarMayor36(vec) {
+      //   let suma = 0;
+      //   for (let i = 0; i < vec.length; i++) {
+      //     if (vec[i] > 36) {
+      //       suma = suma + vec[i];
+      //     }
+      //   }
+      //   document.write(
+      //     "Valor acumulado de las componentes mayores a 36:" + suma + "<br>"
+      //   );
+      // }
+
+      // function cantidadMayores50(vec) {
+      //   let cant = 0;
+      //   for (let i = 0; i < vec.length; i++) {
+      //     if (vec[i] > 50) {
+      //       cant = cant + 1;
+      //     }
+      //   }
+      //   document.write("Cantidad de componentes mayores a 50:" + cant + "<br>");
+      // }
+
+      // let vec = new Array(4);
+      // cargar(vec);
+      // sumar(vec);
+      // sumarMayor36(vec);
+      // cantidadMayores50(vec);
+
+      // Realizar un programa que pida la carga de dos vectores numéricos. Obtener la suma de los dos vectores, dicho resultado guardarlo en un tercer vector del mismo tamaño. Sumar componente a componente.El tamaño del vector es a elección.
+
+      // function cargarVectores(vec1, vec2) {
+      //   for (let f = 0; f < vec1.length; f++) {
+      //     let valor = prompt("Ingrese componente del primer vector:", "");
+      //     vec1[f] = parseInt(valor);
+      //   }
+      //   for (let f = 0; f < vec2.length; f++) {
+      //     let valor = prompt("Ingrese componente del segundo vector:", "");
+      //     vec2[f] = parseInt(valor);
+      //   }
+      // }
+
+      // function sumarVectores(vec1, vec2, vecsuma) {
+      //   for (let f = 0; f < vecsuma.length; f++) {
+      //     vecsuma[f] = vec1[f] + vec2[f];
+      //   }
+      // }
+
+      // function imprimirVector(vecsuma) {
+      //   for (let f = 0; f < vecsuma.length; f++) {
+      //     document.write(vecsuma[f] + " ");
+      //   }
+      // }
+
+      // let vec1 = new Array(4);
+      // let vec2 = new Array(4);
+      // let vecsuma = new Array(4);
+      // cargarVectores(vec1, vec2);
+      // sumarVectores(vec1, vec2, vecsuma);
+      // imprimirVector(vecsuma);
+
+      // Clase Math
+      // Confeccionar un programa que permita cargar un valor comprendido entre 1 y 10. Luego generar un valor aleatorio entre 1 y 10, mostrar un mensaje con el número sorteado e indicar si ganó o perdió:
+
+      // let selec = parseInt(prompt("Ingrese un valor entre 1 y 10"));
+      // let num = parseInt(Math.random() * 10) + 1;
+
+      // if (selec <= 10) {
+      //   if (num === selec)
+      //     document.write("Ganó el número que se sorteó es el " + num);
+      //   else
+      //     document.write(
+      //       "Lo siento se sorteó el valor " +
+      //         num +
+      //         " y usted eligió el " +
+      //         selec
+      //     );
+      // } else {
+      //   document.write("El numero ingresado no esta comprendido entre 1 y 10");
+      // }
+
+      // Confeccionar un programa que solicite el ingreso de un número y nos muestre dicho valor elevado a la tercera potencia.
+
+      // let numero = parseInt(prompt("Ingrese un numero"));
+      // let potencia = parseInt(Math.pow(numero, 3));
+
+      // document.write("El valor " + numero + " elevado a la 3 es " + potencia);
+
+      // Ingresar por teclado un valor y luego mostrar la raiz cuadrada de dicho valor.
+      // let numero = parseInt(prompt("Ingrese un numero"));
+      // let raiz = parseInt(Math.sqrt(numero));
+      // document.write("La raiz cuadrada de " + numero + " es " + raiz);
+
+      // Clase String
+      // let cadena = prompt("Ingrese una cadena:");
+      // document.write("La cadena ingresada es:" + cadena);
+      // document.write("<br>");
+      // document.write("La cantidad de caracteres son:" + cadena.length);
+      // document.write("<br>");
+      // document.write("El primer carácter es:" + cadena.charAt(0));
+      // document.write("<br>");
+      // document.write("Los primeros 3 caracteres son:" + cadena.substring(0, 3));
+      // document.write("<br>");
+      // if (cadena.indexOf("hola") != -1) {
+      //   document.write("Se ingresó la subcadena hola");
+      // } else {
+      //   document.write("No se ingresó la subcadena hola");
+      // }
+      // document.write("<br>");
+      // document.write(
+      //   "La cadena convertida a mayúsculas es:" + cadena.toUpperCase()
+      // );
+      // document.write("<br>");
+      // document.write(
+      //   "La cadena convertida a minúsculas es:" + cadena.toLowerCase()
+      // );
+      // document.write("<br>");
+
+      // Ingresar una serie de nombres por teclado hasta que se cargue la palabra Fin, y mostrar cuántos nombres se ingresaron.
+
+      // let contador = 0;
+      // let nombre;
+      // do {
+      //  nombre = prompt('Ingrese un nombre (Terminar ingresando Fin):');
+      //   contador++;
+      // } while (nombre != "fin");
+      // //para descontar la palabra Fin
+      // contador--;
+      // document.write(contador);
+
+      // Igual al anterior, pero que termine la aplicación sin contemplar mayúsculas ni minúsculas. Es decir que para salir se pueda teclear fin, Fin o FIN.
+
+      // let contador = 0;
+      // let nombre;
+      // do {
+      //   nombre = prompt(
+      //     "Ingrese un nombre (Terminar ingresando fin,Fin 0 FIN):"
+      //   );
+
+      //   contador++;
+      //   nombre = nombre.toUpperCase();
+      // } while (nombre != "FIN");
+
+      // contador--;
+      // document.write(contador);
+
+      // Realizar la búsqueda de un string clave en un string fuente. Se deberá ingresar una frase o texto (fuente) y luego la clave a buscar. En caso de encontrarla, imprimir la posición, de lo contrario una leyenda que indique que no está.
+
+      // let frase = prompt("Ingrese una oración:");
+      // document.write(frase + "<br><br>");
+      // let palabra = prompt("Ingrese una palabra:");
+      // if (frase.indexOf(palabra) != -1) {
+      //   document.write(
+      //     "La frase ingresada contiene la palabra: " +
+      //       palabra +
+      //       " a partir de la posición " +
+      //       frase.indexOf(palabra)
+      //   );
+      // } else {
+      //   document.write("La frase ingresada no contiene la palabra: " + palabra);
+      // }
+
+      // Ingresar una palabra o texto por teclado y determinar si es o no una palabra palíndromo. (Palabra que se lee de igual manera de adelante hacia atrás, que de atrás hacia delante)
+
+      // let texto = prompt("Ingrese una palabra o frase:");
+      // let cant = 0;
+      // for (let i = 0; i < texto.length; i++) {
+      //   if (texto.charAt(i) === texto.charAt(texto.length - 1 - i)) {
+      //     cant++;
+      //   }
+      // }
+      // if (cant == texto.length) {
+      //   document.write(texto + " se lee igual en ambas direcciones");
+      // } else {
+      //   document.write(texto + " no se lee igual en ambas direcciones");
+      // }
+
+      // Realizar un programa que permita cargar una dirección de mail e implementar una función que verifique si el String tiene cargado el carácter @.
+
+      // Forma facil
+
+      // let email = prompt("Ingrese su email");
+
+      // if (email.indexOf("@") != -1) {
+      //   document.write("El email ingresado es " + email);
+      // } else {
+      //   document.write("El email ingresado no tiene el @");
+      // }
+
+      // Forma dificil
+
+      // function verificarArroba(mail) {
+      //     let cant = 0;
+      //     for (let f = 0; f < mail.length; f++) {
+      //         if (mail.charAt(f) == '@') {
+      //             cant++;
+      //         }
+      //     }
+      //     if (cant != 0) {
+      //         document.write('El mail ' + mail + ' tiene el caracter @');
+      //     } else {
+      //         document.write('El mail ' + mail + ' no tiene el caracter @');
+      //     }
+      // }
+
+      // let mail = prompt('Ingrese un mail:');
+      // verificarArroba(mail);
+
+      // Cargar un String por teclado e implementar las siguientes funciones:
+      // a) Imprimir la primera mitad de los caracteres de la cadena.
+      // b) Imprimir el último carácter.
+      // c) Imprimirlo en forma inversa.
+      // d) Imprimir cada carácter del String separado con un guión.
+      // e) Imprimir la cantidad de vocales almacenadas.
+
+      // function mitad(frase) {
+      //   document.write("Mitad inicial de la frase:");
+      //   for (let f = 0; f < frase.length / 2; f++) {
+      //     document.write(frase.charAt(f));
+      //   }
+      //   document.write("<br><br>");
+      // }
+
+      // function ultimoCaracter(frase) {
+      //   document.write("Ultimo carácter:");
+      //   document.write(frase.charAt(frase.length - 1));
+      //   document.write("<br><br>");
+      // }
+
+      // function imprimirInverso(frase) {
+      //   document.write("En forma inversa:");
+      //   for (let f = 0; f < frase.length; f++) {
+      //     document.write(frase.charAt(frase.length - f - 1));
+      //   }
+      //   document.write("<br><br>");
+      // }
+
+      // function imprimirConGuion(frase) {
+      //   document.write("Separados por guión:");
+      //   for (let f = 0; f < frase.length; f++) {
+      //     document.write(frase.charAt(f) + "-");
+      //   }
+      //   document.write("<br><br>");
+      // }
+
+      // function cantidadVocales(frase) {
+      //   let cant = 0;
+      //   for (let f = 0; f < frase.length; f++) {
+      //     if (
+      //       frase.charAt(f) == "a" ||
+      //       frase.charAt(f) == "e" ||
+      //       frase.charAt(f) == "i" ||
+      //       frase.charAt(f) == "o" ||
+      //       frase.charAt(f) == "u" ||
+      //       frase.charAt(f) == "A" ||
+      //       frase.charAt(f) == "E" ||
+      //       frase.charAt(f) == "I" ||
+      //       frase.charAt(f) == "O" ||
+      //       frase.charAt(f) == "U"
+      //     ) {
+      //       cant++;
+      //     }
+      //   }
+      //   document.write("Cantidad de vocales:" + cant);
+      // }
+
+      // let frase = prompt("Ingrese una palabra o frase:");
+      // document.write(frase);
+      // document.write("<br><br>");
+      // mitad(frase);
+      // ultimoCaracter(frase);
+      // imprimirInverso(frase);
+      // imprimirConGuion(frase);
+      // cantidadVocales(frase);
+      //  Codifique un programa que permita cargar una oración por teclado, luego mostrar cada palabra ingresada en una línea distinta.
+      //  Por ejemplo si cargo:
+      //  La mañana está fría.
+      //  Debe aparecer:
+      //  La
+      //  mañana
+      //  está
+      //  fría.
+
+      // let frase = prompt("Ingrese una frase:");
+      // for (let f = 0; f < frase.length; f++) {
+      //   if (frase.charAt(f) == " ") {
+      //     document.write("<br>");
+      //   } else {
+      //     document.write(frase.charAt(f));
+      //   }
+      // }
+    </script>
+    <!-- Objetos literales
+    Ejemplo: -->
+    <script>
+      // let cliente1 = {
+      //   nombre: "Juan",
+      //   deposito: 0,
+      //   // Para acceder a las propiedades de un objeto dentro de un método es necesario usar la palabra reservada this
+      //   imprimir: function () {
+      //     document.write(this.nombre + "<br>");
+      //     document.write(this.deposito + "<br>");
+      //   },
+      //   depositar: function (monto) {
+      //     this.deposito = this.deposito + monto;
+      //   },
+      //   extraer: function (monto) {
+      //     this.deposito = this.deposito - monto;
+      //   },
+      // };
+
+      // cliente1.imprimir();
+      // cliente1.depositar(1000);
+      // document.write("Estado luego de depositar 1000 pesos</br>");
+      // cliente1.imprimir();
+      // cliente1.extraer(200);
+      // document.write("Estado luego de extraer 200 pesos</br>");
+      // cliente1.imprimir();
+    </script>
+
+    <!-- Crear un objeto que represente los datos de un participante de un juego.
+    Definir las propiedades nombre puntos y los métodos: imprimir (mostrar el
+    nombre de jugador y los puntos actuales) aumentarPuntos (permite incrementar
+    la cantidad de puntos actuales del jugador) verificarSiGano (mostrar un
+    mensaje si los puntos superan a 1000) -->
+    <script>
+      // var jugador1 = {
+      //   nombre: "Jorge",
+      //   puntos: 0,
+      //   imprimir: function () {
+      //     document.write("Nombre:" + this.nombre + "<br>");
+      //     document.write("Puntos:" + this.puntos + "<br>");
+      //   },
+      //   aumentarpuntos: function (cant) {
+      //     this.puntos = this.puntos + cant;
+      //   },
+      //   verificarsigano: function () {
+      //     if (this.puntos > 1000) {
+      //       document.write("Gano<br>");
+      //     } else {
+      //       document.write("No gano<br>");
+      //     }
+      //   },
+      // };
+
+      // jugador1.imprimir();
+      // jugador1.aumentarpuntos(500);
+      // jugador1.verificarsigano();
+      // jugador1.aumentarpuntos(501);
+      // jugador1.imprimir();
+      // jugador1.verificarsigano();
+    </script>
+  </body>
+</html>

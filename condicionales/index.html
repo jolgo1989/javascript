@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Estructuras condicionales simples.
+
+      // Realizar la carga de una nota de un alumno. Mostrar un mensaje que aprobó si tiene una nota mayor o igual a 4:
+      //       let nombre = prompt("Ingrese su nombre");
+      //       let nota = parseInt(prompt("Ingrese su nota"));
+
+      //       if (nota > 4) {
+      //         document.write(nombre + " esta aprobado con una nota de:" + nota);
+      //       }
+
+      // Se ingresa por teclado el sueldo de un empleado (se puede ingresar un valor con decimales), si el sueldo supera los 3000 pesos, luego mostrar un mensaje indicando que debe abonar impuestas.
+
+      /*parseFloat para numero decimales*/
+
+      // let nombre = prompt("Ingrese nombre del empleado");
+      // let sueldo = parseFloat(prompt("Ingrese sueldo"));
+
+      // if (sueldo > 3000) {
+      //   document.write(nombre + " Debe pagar impuestos porque gana " + sueldo);
+      // } else {
+      //   document.write(nombre + " no debe pagar impuesto");
+      // }
+
+      //       Se ingresan tres notas de un alumno, si el promedio es mayor o igual a siete mostrar el mensaje 'Promocionado'. Tener en cuenta que para obtener el promedio debemos operar suma=nota1+nota2+nota3; y luego hacer promedio=suma/3;
+      // Cuando cargamos una nota y queremos convertir inmediatamente el valor ingresado a entero podemos hacer:
+      // nota1=prompt('Ingrese primer nota:','');
+      // nota1=parseInt(nota1);
+      // O en forma más corta:
+
+      // nota1=parseInt(prompt('Ingrese primer nota:',''));
+
+      // let notaUno = parseFloat(prompt("Ingrese su primera nota"));
+      // let notaDos = parseFloat(prompt("Ingrese su segunda nota"));
+      // let notaTres = parseFloat(prompt("Ingrese su tercera nota"));
+
+      // let suma =
+      //   parseFloat(notaUno) + parseFloat(notaDos) + parseFloat(notaTres);
+
+      // let promedio = parseFloat(suma) / 3;
+
+      // if (promedio >= 7) {
+      //   document.write("promocionado con una nota de " + promedio);
+      // } else {
+      //   document.write("No esta promocionado");
+      // }
+
+      // Solicitar que se ingrese dos veces una clave. Mostrar un mensaje si son iguales (tener en cuenta que para ver si dos variables tienen el mismo valor almacenado debemos utilizar el operador ==)
+      // let claveUno = parseInt(prompt("Ingrese su clave"));
+      // let claveDos = parseInt(prompt("Repita su clave"));
+
+      // if (claveUno == claveDos) {
+      //   document.write("La clave coincide");
+      // } else {
+      //   document.write("La clave no coincide");
+      // }
+
+      // Se ingresan tres notas de un alumno, si el promedio es mayor o igual a 4 mostrar un mensaje 'regular', sino 'reprobado'.
+
+      // let primeraNota = parseInt(prompt("Ingrese primera nota"));
+      // let segundaNota = parseInt(prompt("Ingrese segunda nota"));
+      // let terceraNota = parseInt(prompt("Ingrese tercera nota"));
+
+      // let suma = primeraNota + segundaNota + terceraNota;
+      // let promedio = suma / 3;
+      // if (promedio >= 4) {
+      //   document.write("Regular");
+      // } else {
+      //   document.write("Reprobado");
+      // }
+
+      // Se ingresa por teclado un número positivo de uno o dos dígitos (1..99) mostrar un mensaje indicando si el número tiene uno o dos dígitos (recordar de convertir a entero con parseInt para preguntar posteriormente por una variable entera). Tener en cuenta qué condición debe cumplirse para tener dos dígitos un número entero.
+
+      // let numero = parseInt(prompt("Ingrese un numero del 1 al 99"));
+
+      // if (numero <= 9) {
+      //   document.write("El numero ingresado es de un digito");
+      // } else {
+      //   document.write("El numero ingresado es de dos digitos");
+      // }
+
+      // Estructuras condicionales anidadas.
+      //       Confeccionar un programa que pida por teclado tres notas de un alumno, calcule el promedio e imprima alguno de estos mensajes:
+
+      // Si el promedio es >=7 mostrar "Promocionado".
+      // Si el promedio es >=4 y <7 mostrar "Regular".
+      // Si el promedio es <4 mostrar "Reprobado".
+
+      // let nota1 = parseInt(prompt("Ingrese primera nota"));
+      // let nota2 = parseInt(prompt("Ingrese segunda nota"));
+      // let nota3 = parseInt(prompt("Ingrese tercera nota"));
+
+      // let promedio = (nota1 + nota2 + nota3) / 3;
+
+      // if (promedio >= 7) {
+      //   document.write("Promocionado");
+      // } else if (promedio >= 4) {
+      //   document.write("Regular");
+      // } else {
+      //   document.write("Reprobado");
+      // }
+
+      // Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.
+
+      // let num1 = parseInt(prompt("Ingrese primer numero"));
+      // let num2 = parseInt(prompt("Ingrese segundo numero"));
+      // let num3 = parseInt(prompt("Ingrese tercer numero"));
+
+      // if (num1 > num2) {
+      //   if (num1 > num3) {
+      //     document.write("El mayor de los tres es:" + num1);
+      //   } else {
+      //     document.write("El mayor de los tres es:" + num3);
+      //   }
+      // } else {
+      //   if (num2 > num3) {
+      //     document.write("El mayor de los tres es:" + num2);
+      //   } else {
+      //     document.write("El mayor de los tres es:" + num3);
+      //   }
+      // }
+
+      // Se ingresa por teclado un valor entero, mostrar una leyenda que indique si el número es positivo, cero o negativo.
+      // let num = parseInt(prompt("ingrese un valor entero"));
+
+      // if (num === 0) {
+      //   document.write("El numero ingresado es " + num);
+      // } else if (num >= 1) {
+      //   document.write("EL numero ingresado es prositivo");
+      // } else {
+      //   document.write("El numero ingresado es negativo");
+      // }
+
+      // Confeccionar un programa que permita cargar un número entero positivo de hasta tres cifras y muestre un mensaje indicando si tiene 1, 2, o 3 cifras.
+      // let num = parseInt(prompt("Ingrese un numero entero"));
+      // if (num < 10) {
+      //   document.write("El numero ingresado es de 1 cifra");
+      // } else if (num <= 99) {
+      //   document.write("El numero ingresado es de 2 cifras");
+      // } else {
+      //   if (num <= 999) {
+      //     document.write("El numero ingresado es de 3 cifras");
+      //   } else {
+      //     document.write("EL numero ingresado supera las 3 cifras");
+      //   }
+      // }
+
+      /*De un postulante a un empleo, que realizó un test de capacitación, se obtuvo la siguiente información: nombre del postulante, cantidad total de preguntas que se le realizaron y cantidad de preguntas que contestó correctamente. Se pide confeccionar un programa que lea los datos del postulante e informe el nivel del mismo según el porcentaje de respuestas correctas que ha obtenido, y sabiendo que:
+      Nivel superior: Porcentaje>=90%.
+      Nivel medio: Porcentaje>=75% y <90%.
+      Nivel regular: Porcentaje>=50% y <75%.
+      Fuera de nivel: Porcentaje<50%.*/
+      // let cantcorrectas = parseInt(
+      //   prompt("Ingrese la cantidad de preguntas que contestó correctamente")
+      // );
+
+      // let cantpreguntas = parseInt(
+      //   prompt("Ingrese cantidad de preguntas realizadas")
+      // );
+
+      // porcentaje = (cantcorrectas / cantpreguntas) * 100;
+      // if (porcentaje >= 90) {
+      //   document.write("Nivel superior");
+      // } else {
+      //   if (porcentaje >= 75) {
+      //     document.write("Nivel medio");
+      //   } else {
+      //     if (porcentaje >= 50) {
+      //       document.write("Nivel regular");
+      //     } else {
+      //       document.write("Fuera de nivel");
+      //     }
+      //   }
+      // }
+
+      // Realizar un programa que solicite dos números distintos y muestre el mayor de ellos:
+      //   let numerUno = parseInt(prompt("Ingrese primer valor"));
+      //   let numeroDos = parseInt(prompt("Ingrese segundo valor"));
+
+      //   if (numerUno > numeroDos) {
+      //     document.write("El numero mayor es :" + numerUno);
+      //   } else {
+      //     document.write("El numero mayor es:" + numeroDos);
+      //   }
+
+      // Realizar un programa que lea por teclado dos números, si el primero es mayor al segundo informar su suma y diferencia, en caso contrario informar el producto y la división del primero respecto al segundo.
+
+      // let numerUno, numeroDos, suma, producto;
+
+      // numerUno = parseInt(prompt("Ingrese primer numero"));
+      // numeroDos = parseInt(prompt("Ingrse segundo valor"));
+
+      // if (numerUno > numeroDos) {
+      //   suma = numerUno + numeroDos;
+      //   diferencia = numerUno - numeroDos;
+
+      //   document.write(
+      //     "La suma de los numeros es " +
+      //       suma +
+      //       "y la diferencia es: " +
+      //       diferencia
+      //   );
+      // } else {
+      //   producto = numerUno * numeroDos;
+      //   division = numerUno / numeroDos;
+
+      //   document.write(
+      //     "El producto de los numero es:" +
+      //       producto +
+      //       "y la division es:" +
+      //       division
+      //   );
+      // }
+
+      // Realizar un programa que pida cargar una fecha cualquiera, luego verificar si dicha fecha corresponde a Navidad (se debe cargar por separado el dia, el mes y el año)
+
+      // let dia = parseInt(prompt("Ingrese el dia"));
+      // let mes = parseInt(prompt("Ingrese el mes"));
+      // let año = parseInt(prompt("Ingrese el año"));
+      // // let año = parseInt(prompt("Ingrese el año"));
+
+      // if (dia == 25 && mes == 12) {
+      //   document.write("La fecha ingresada corresponde a navidad");
+      // } else {
+      //   document.write("La fecha ingresada no corresponde a navidad");
+      // }
+
+      /**
+       * *Operador condicional ?:(Operador condicional elvis)*/
+      // Cargar dos valores por teclado, luego almacenar en una variable el mayor de los dos valores ingresados.
+
+      // let x = parseInt(prompt("Ingrese primer valor"));
+      // let y = parseInt(prompt("Ingrese segundo valor"));
+      // let mayor;
+      // // If x es mayor a y X es mayor sino Y es mayor
+      // // condición ? instrucción 1 : instrucción 2;
+      // x > y ? (mayor = x) : (mayor = y);
+      // document.write(`El numero mayor es:` + mayor);
+
+      // Ingresar el sueldo bruto de un trabajador. Si supera a 10000 aplicar un descuento del 10%, en caso contrario el descuento es del 5%.
+
+      let sueldo = parseFloat(prompt("Ingrese el sueldo del trabajador:"));
+      sueldo > 10000 ? (sueldo = sueldo * 0.9) : (sueldo = sueldo * 0.95);
+      alert("El sueldo con el descuento es de: " + sueldo);
+    </script>
+  </body>
+</html>

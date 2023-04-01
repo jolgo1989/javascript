@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Todo: Expresiones regulares(Util para validar correo) -->
+    <!-- Validar si se ingresa un valor entero con exactamente tres dígitos. -->
+    <script>
+      // let valor = prompt("Ingrese un numero entero positivo de 3 dígitos");
+      // let regEx = new RegExp("^[0-9]{3}$");
+      // if (regEx.test(valor))
+      //   alert("Se ingresó un valor entero positivo de 3 dígitos");
+      // else alert("No se ingresó un valor entero positivo de 3 dígitos");
+      /***
+       *Todo:El mismo problema se puede expresar utilizando una sintaxis distinta para la creación de la expresión regular (esta otra sintaxis es muy utilizada, pero en el fondo el interprete de JavaScript crea un objeto de tipo RegExp)*/
+      // let valor = prompt("Ingrese un numero entero positivo de 3 dígitos");
+      // let regEx = /^[0-9]{3}$/;
+      // if (regEx.test(valor))
+      //   alert("Se ingresó un valor entero positivo de 3 dígitos");
+      // else alert("No se ingresó un valor entero positivo de 3 dígitos");
+    </script>
+    <!-- Ingresar una oración por teclado y luego imprimir un mensaje si la oración ingresada contiene la palabra 'hora' -->
+    <script>
+      // let oracion = prompt(`Ingrese una oración`);
+      // let regEx = /hola/;
+      // if (regEx.test(oracion)) {
+      //   alert`La oración ingresada contiene la palabra Hola`;
+      // } else {
+      //   alert`La oración ingresada no contiene la palabra Hola`;
+      // }
+    </script>
+
+    <!--Todo: Expresiones regulares: (^ principio $ fin) de cadena -->
+    <!-- Los dos primeros caracteres con un significado especial en una expresión regular son: ^ principio de cadena y $ fin de cadena.Cuando queremos controlar si un string comienza con un determinado carácter o conjunto de caracteres podemos implementar una expresión regular antecediendo al o los caracteres el símbolo ^. -->
+    <!-- Ingresar una oración y mostrar un mensaje si la misma comienza con el
+    carácter '-'. Otro mensaje si comienzo con la palabra 'hora'. -->
+    <script>
+      // let oracion = prompt("Ingrese una oración");
+      // let patron1 = /^-/;
+      // if (patron1.test(oracion)) alert("Comienza la oración con el carácter -");
+      // else alert("No comienza la oración con el carácter -");
+      // let patron2 = /^hora/;
+      // if (patron2.test(oracion))
+      //   alert("Comienza la oración con la palabra hora");
+      // else alert("No comienza la oración con la palabra hora");
+    </script>
+    <!-- Ingresar una palabra y mostrar un mensaje si la misma finaliza con el string'ón' -->
+    <script>
+      // let oracion = prompt("Ingrese una oración");
+      // let regEx = /on$/;
+      // if (regEx.test(oracion)) {
+      //   alert(`Termina con la palabra on`);
+      // } else {
+      //   alert(`No termina con la palabra on`);
+      // }
+    </script>
+    <!--Todo: Expresiones regulares: [] conjunto de caracteres opcionales -->
+    <!-- Controlar si la palabra ingresada comienza con el primer carácter alfabético ya sea en mayúsculas o en minúsculas: -->
+
+    <script>
+      // let palabra = prompt("Ingrese una palabra");
+      /**
+       *Todo: Indica que por lo menos debe haber una letra de la a a la z en minuscula o de la A a la Z mayuscula(/^[a-zA-Z]/).
+       */
+      // let regEx = /^[a-zA-Z]/;
+      // if (regEx.test(palabra))
+      //   alert(
+      //     "La palabra comienza con un carácter alfabético (mayúscula o minúscula)"
+      //   );
+      // else
+      //   alert(
+      //     "La palabra no comienza con un carácter alfabético (mayúscula o minúscula)"
+      //   );
+    </script>
+    <!-- Ingresar una palabra y luego mostrar un mensaje si finaliza con vocal. -->
+    <script>
+      // let oracion = prompt(`Ingrese una oración`);
+      // let regEx = /[aeiouAEIOUáéíóú]$/;
+
+      // if (regEx.test(oracion)) {
+      //   alert(`La pabra finaliza con una vocal`);
+      // } else {
+      //   alert(`La pabra no finaliza con una vocal`);
+      // }
+    </script>
+    <!-- Ingresar una clave que no finalice en vocal. -->
+    <script>
+      // let oracion = prompt(`Ingrese una oración`);
+      // let regEx = /[^aeiouAEIOUáéíóú]$/;
+      // if (regEx.test(oracion)) {
+      //   alert(`La clave no finaliza con vocal `);
+      // } else {
+      //   alert(`La clave  finaliza con vocal `);
+      // }
+    </script>
+    <!-- Ingresar una palabra y luego mostrar un mensaje si contiene una vocal en alguna parte de la palabra. -->
+    <script>
+      // let palabra = prompt("Ingrese una palabra");
+      // let patron = /[aeiouAEIOUáéíóú]/;
+      // if (patron.test(palabra)) alert("La palabra tiene al menos una vocal");
+      // else alert("La palabra no tiene vocales");
+    </script>
+    <!-- Ingresar una oración por teclado y luego mostrar un mensaje si el string
+    ingresado contiene al menos uno de los caracteres que son un comando o
+    metacaracter para las expresiones regulares: 
+    **Se verifica verdadero el método test si ingresamos: La tarde estaba soleada! 
+    **Se verifica falso el método test si ingresamos: La tarde estaba soleada -->
+
+    <script>
+      // let oracion = prompt("Ingrese una oracion");
+      // let patron = /[\^$.*+?=!:|\\/()\[\]{}]/;
+      // if (patron.test(oracion))
+      //   alert(
+      //     "La oración tiene al menos un carácter ^ $. * +? =! : | \ / () [] {}"
+      //   );
+      // else
+      //   alert(
+      //     "La oración no tiene ningún carácter ^ $. * +? =! : | \ / () [] {}"
+      //   );
+    </script>
+    <!-- Ingresar todos los caracteres con significada especial en las expresiones
+    regulares en el siguiente orden: ^$.*+?=!:|\/()[]{} (es necesario escapar todos los metacaracteres): -->
+    <script>
+      // let cadena = prompt(
+      //   "Ingrese esos caracteres especiales para expresiones regulares en este mismo orden: ^$.*+?=!:|\/()[]{} "
+      // );
+      // let regEx = /^\^\$\.\*\+\?\=\!\:\|\\\/\(\)\[\]\{\}$/;
+      // if (patron.test(cadena)) alert("Orden correcto");
+      // else alert("Incorrecto");
+    </script>
+
+    <!--Todo: metacaracteres de cuantificadores alternativos * ? + -->
+    <!-- Ingresar una palabra por teclado y validar que tenga al menos una vocal. -->
+    <script>
+      // let palabra = prompt("Ingrese una palabra con al menos una vocal:");
+      // let patron = /[aeiou]+/;
+      // if (patron.test(palabra))
+      //   document.write("La palabra ingresada tiene al menos una vocal");
+      // else document.write("La palabra ingresada no tiene vocales");
+    </script>
+    <!-- Ingresar un valor numérico entero que podemos opcionalmente antecederle alguno de los caracteres: + o -. -->
+    <script type="text/javascript">
+      // let valor = prompt(
+      //   "Ingrese un valor numérico entero, puede anteceder el +/-:"
+      // );
+      // let patron = /^[\+\-]?[0-9]+$/;
+      // if (patron.test(valor)) document.write("Tiene un formato correcto");
+      // else document.write("Formato incorrecto");
+    </script>
+    <!-- Es test se verifica correcto si ingresamos:
+     1200 
+     +300 
+     -55 e incorrecto si ingresamos: 
+     10z55 
+     +34aa2 
+     +-20 
+     +++34 -->
+
+    <!-- Ingresar un valor numérico entero o real, se debe validar que se ingrese al menos un número previo al operador punto que es opcional y finalizar con un número obligatoriamente. -->
+    <script>
+      // let valor = prompt("Ingrese un valor numérico entero o real:");
+      // let patron = /^[0-9]+\.?[0-9]+$/;
+      // if (patron.test(valor)) document.write("Tiene un formato correcto");
+      // else document.write("Formato incorrecto");
+    </script>
+    <!-- Todo: Expresiones regulares abreviadas: \d \w \s \D \W -->
+    <!-- Verificar si un número ingresado por teclado tiene exactamente 5 dígitos. -->
+    <script>
+      // let valor = prompt("Ingrese un valor numérico de 5 dígitos");
+      // let patron = /^\d{5}$/;
+      // if (patron.test(valor)) document.write("Tiene 5 dígitos");
+      // else document.write("No tiene 5 dígitos");
+    </script>
+    <!-- Ingresar una oración y mostrar un mensaje si tiene al menos una palabra de 4 caracteres. -->
+    <script>
+      // let oracion = prompt("Ingrese una oracion");
+      // let patron = /\s?\w{4}\s?/;
+      // if (patron.test(oracion))
+      //   document.write("Tiene al menos una palabra de 4 caracteres");
+      // else document.write("No tiene una palabra de 4 caracteres");
+    </script>
+    <!-- Validar si un string contiene 4 números de 3 dígitos cada uno separados por coma. -->
+    <script>
+      // let cadena = prompt("Ingrese 4 números de 3 dígitos separados por coma");
+      // let patron = /^\d{3}\,\d{3}\,\d{3}\,\d{3}$/;
+      // if (patron.test(cadena)) document.write("correcto");
+      // else document.write("incorrecto");
+    </script>
+    <!--Todo: Expresiones regulares: alternancia | -->
+    <!-- Validar el ingreso de un típo y nro de factura. Para que sea correcto el primer carácter debe ser a,b o c y el nro debe tener uno o más dígitos. -->
+    <script>
+      // let factura = prompt("Ingrese tipo y nro de factura:");
+      // let patron = /^[a|b|c]\d+$/;
+      // if (patron.test(factura))
+      //   document.write("Se ingresó un tipo y nro de factura correcta");
+      // else document.write("Se ingresó un tipo y nro de factura incorrecta");
+    </script>
+    <!-- Validar si una palabra comienza con los caracteres va o ba -->
+    <script>
+      // let palabra = prompt("Ingrese una palabra que comience con va o ba:");
+      // let patron = /^[va|ba]/;
+      // if (patron.test(palabra))
+      //   document.write("La palabra comienza con va o ba");
+      // else document.write("La palabra no comienza con va o ba");
+    </script>
+    <!-- Confeccionar una expresión regular que valide el ingreso del nombre de un día de la semana, un espacio y un número de 1 o 2 dígitos. -->
+    <script>
+      // let dato = prompt("Ingrese nombre del día de la semana y su número:");
+      // let patron =
+      //   /[lunes|martes|miercoles|jueves|viernes|sabado|domingo]\s\d{1,2}$/;
+      // if (patron.test(dato)) document.write("correcto");
+      // else document.write("formato incorrecto");
+    </script>
+    <!--Todo: Expresiones regulares: metacarácter punto -->
+    <script>
+      // let cadena = prompt(
+      //   "Ingrese una cadena de cinco caracteres que comience y finalice con a"
+      // );
+      // let patron = /^a...a$/;
+      // if (patron.test(cadena)) document.write("cadena correcta");
+      // else document.write("cadena incorrecta");
+    </script>
+    <script>
+      // let nro = prompt("Ingrese un número con el formato 999.99");
+      // let patron = /^\d{3}\.\d{2}$/;
+      // if (patron.test(nro)) document.write("nro correcto");
+      // else document.write("nro incorrecto");
+    </script>
+    <!--Todo: Expresiones regulares: agrupación en subpatrones () -->
+    <!-- Elaborar una expresión regular que permita validar si se ingresó
+    correctamente un valor entero o real y que eventualmente lleve el caracter +
+    o - al principio. Validar que si se ingresa la coma debe ingresarse la parte
+    real -->
+    <script>
+      // let nro = prompt("ingrese un número entero o real:");
+      // let patron = /^[+-]?\d+(\,\d+)?$/;
+      // if (patron.test(nro)) alert("Correcto");
+      // else alert("Incorrecto");
+    </script>
+    <!-- Ingresar una hora con el formato hh:mm:ss, plantear una expresión regular que valide si es correcta. -->
+    <script>
+      // let hora = prompt("ingrese una hora con el formato hh:mm:ss");
+      // let patron = /^(0[1-9]|1\d|2[0-3]):([0-5]\d):([0-5]\d)$/;
+      // if (patron.test(hora)) alert("Correcto");
+      // else alert("Incorrecto");
+    </script>
+    <!-- Validar el ingreso de una hora con el formato hh:mm:ss o hh:mm -->
+    <script>
+      // let hora = prompt("ingrese una hora con el formato hh:mm:ss o o hh:mm");
+      // let patron = /^(0[1-9]|1\d|2[0-3]):([0-5]\d)(:([0-5]\d))?$/;
+      // if (patron.test(hora)) alert("Correcto");
+      // else alert("Incorrecto");
+    </script>
+    <!--Todo: Expresiones regulares: métodos test y exec del objeto RegExp -->
+    <script>
+      // let oracion = "saliendo de la casa que esta en la montaña";
+      // let patron1 = /la/;
+      // let vector1 = patron1.exec(oracion);
+      // document.write(vector1.index);
+      // document.write("<br>");
+      // document.write(vector1.input);
+      // document.write("<br>");
+      // let patron2 = /lax/;
+      // let vector2 = patron2.exec(oracion);
+      // document.write(vector2);
+    </script>
+    <!--Todo: Expresiones regulares: modificadores i (insensitive) g (global) m (multiline) -->
+    <script>
+      // let palabra = "Administracion";
+      // let patron = /adm/i;
+      // if (patron.test(palabra))
+      //   document.write(
+      //     "La palabra " +
+      //       palabra +
+      //       " contiene la cadena adm sin tener en cuenta mayúsculas/minúsculas"
+      //   );
+    </script>
+    <script>
+      // let oracion = "El auto tiene el mejor motor que elegimos";
+      // let patron = /el/gi;
+      // let vec = patron.exec(oracion);
+      // document.write(vec.index); //0
+      // document.write("<br>");
+      // vec = patron.exec(oracion);
+      // document.write(vec.index); //14
+      // document.write("<br>");
+      // vec = patron.exec(oracion);
+      // document.write(vec.index); //33
+      // document.write("<br>");
+      // vec = patron.exec(oracion);
+      // document.write(vec); //null
+    </script>
+    <!--Todo: Expresiones regulares: métodos search, replace, split, match del objeto String. -->
+    <script>
+      // let oracion = "uno dos tres uno dos tres uno dos tres";
+      // let cadena = oracion.replace(/uno/g, "1");
+      // alert(cadena); //1 dos tres 1 dos tres 1 dos tres
+    </script>
+    <script>
+      // let cadena = "(2,3)-(4,4)-(9,3)";
+      // let vec = cadena.split(/-/);
+      // for (let x = 0; x < vec.length; x++) {
+      //   document.write(vec[x] + "<br>");
+      // }
+    </script>
+    <!-- Se tiene un string donde tenemos almacenados los nombres de personas seguido de sus edades. Generar un vector solo con las edades de todas las personas. -->
+    <script>
+      let cadena = "juan 10 luis 43 pedro 21 carlos 33";
+      let vec = cadena.match(/\d+/g);
+      for (let x = 0; x < vec.length; x++) {
+        document.write(vec[x] + "<br>");
+      }
+    </script>
+  </body>
+</html>

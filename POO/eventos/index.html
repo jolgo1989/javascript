@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <body onload="activar()"> -->
+    <!-- Eventos onFocus y onBlur
+    Implementar un formulario que solicite la carga del nombre y la edad de una persona. Cuando el control tome foco borrar el contenido actual. Mostrar en las propiedades value de los controles text los mensajes "nombre" y "mail" respectivamente. -->
+
+    <!--??Observar video si se tiene duda https://www.youtube.com/watch?v=0UQFJ-uY9yY -->
+
+    <!-- <form>
+      <input
+        type="text"
+        id="nombre"
+        onFocus="vaciar(this)"
+        onblur="verificarEntrada(this)"
+        value="nombre"
+      /><br />
+      <input
+        type="text"
+        id="edad"
+        onFocus="vaciar(this)"
+        onblur="verificarEntrada(this)"
+        value="mail"
+      />
+      <br />
+      <input type="button" value="Confirmar" />
+    </form>
+
+    <script>
+      function vaciar(control) {
+        control.value = "";
+      }
+
+      function verificarEntrada(control) {
+        if (control.value === "") {
+          alert("Debe ingresar datos");
+           // alert('ingreso:' + control.value);
+        }
+       
+      }
+    </script> -->
+
+    <!-- Solicitar que se ingrese el nombre y la clave de un usuario. Mostrar una ventana de alerta si en la clave se ingresan menos de 7 caracteres o más de 20 (capturar el evento onBlur) -->
+    <!-- <form>
+      Ingrese nombre de usuario:
+      <input type="text" id="usuario" /><br />
+      Ingrese clave:
+      <input type="password" id="clave" onBlur="verificar(this)" /><br />
+      <input type="button" value="confirmar" />
+    </form>
+
+    <script>
+      function verificar(control) {
+        if (control.value.length < 7 || control.value.length > 20) {
+          alert(
+            "cantidad de caracteres no valido en la clave(deben ser entre 7-20 caracteres)"
+          );
+        }
+      }
+    </script> -->
+
+    <!-- Eventos onMouseOver y onMouseOut
+    Implementaremos una función que cambie el color con un valor que llegue como parámetro. Cuando retiramos la flecha del mouse volvemos a pintar de negro el fondo de cuadrado: -->
+
+    <!-- <a href="#" onMouseOver="pintar('#f00')" onMouseOut="pintar('#000')"
+      >Rojo</a
+    >
+    -
+    <a href="#" onMouseOver="pintar('#0f0')" onMouseOut="pintar('#000')"
+      >Verde</a
+    >
+    -
+    <a href="#" onMouseOver="pintar('#00f')" onMouseOut="pintar('#000')"
+      >Azul</a
+    >
+    <div
+      id="cuadrado1"
+      style="background: #000; width: 200px; height: 200px"
+    ></div>
+
+    <script>
+      function pintar(col) {
+        document.getElementById("cuadrado1").style.backgroundColor = col;
+      }
+    </script> -->
+
+    <!-- pinta de color el interior de una casilla de una tabla y regresar a su color original cuando salimos de la misma: -->
+    <!-- <table border="1">
+      <tr>
+        <td onMouseOver="pintar(this,'#f00')" onMouseOut="pintar(this,'#fff')">
+          rojo
+        </td>
+        <td onMouseOver="pintar(this,'#0f0')" onMouseOut="pintar(this,'#fff')">
+          verde
+        </td>
+        <td onMouseOver="pintar(this,'#00f')" onMouseOut="pintar(this,'#fff')">
+          azul
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      function pintar(objeto, col) {
+        objeto.style.backgroundColor = col;
+      }
+    </script> -->
+
+    <!-- Modificar el segundo problema resuelto (las casillas de la tabla que cambian el color cuando ingresamos con el mouse) para permitir llamar mediante hipervínculos a distintos programas que administran web-mail (gmail, hotmail y yahoo) -->
+
+    <!-- <table border="1">
+      <tr>
+        <td
+          onMouseOver="pintar(this,'#ff0000')"
+          onMouseOut="pintar(this,'#ffffff')"
+        >
+          <a href="http://www.outlook.com">Outlook</a>
+        </td>
+        <td
+          onMouseOver="pintar(this,'#00ff00')"
+          onMouseOut="pintar(this,'#ffffff')"
+        >
+          <a href="http://www.yahoo.com">Yahoo</a>
+        </td>
+        <td
+          onMouseOver="pintar(this,'#0000ff')"
+          onMouseOut="pintar(this,'#ffffff')"
+        >
+          <a href="http://www.gmail.com">GMail</a>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      function pintar(objeto, col) {
+        objeto.style.backgroundColor = col;
+      }
+    </script> -->
+
+    <!-- Evento onLoad(Debe ir asociado al evento body) -->
+    <!-- <form>
+      Ingrese su nombre:
+      <input type="text" id="nombre" /><br />
+      Ingrese su edad:
+      <input type="text" id="edad" /><br />
+      <input type="button" value="Confirmar" />
+    </form>
+
+    <script>
+      function activar() {
+        document.getElementById("nombre").focus();
+      }
+    </script>
+
+    <!--todo: sintaxis para las buenas practicas en los eventos  -->
+
+    <!-- <form>
+      <input type="button" value="Click me" id="buttonClick" />
+    </form>
+    <script>
+      const BUTTON = document.getElementById("buttonClick");
+
+      BUTTON.addEventListener("click", () => {
+        alert("Hola");
+      });
+    </script> -->
+    <!-- Confeccionar una página que muestre un mensaje con la función alert inmediatamente después que se cargue. -->
+    <!-- 
+    <script>
+      function activar() {
+        alert("La página cargada").focus();
+      }
+    </script> -->
+
+    <!-- Objeto window -->
+    <!-- <p>
+      Este programa permite analizar la llamada a distintas responsabilidades
+      del objeto window.
+    </p>
+    <form>
+      <br />
+      <input type="button" value="open()" id="abrir" onClick="abrir()" />
+      <br />
+      <input
+        type="button"
+        value="open con parámetros"
+        onClick="abrirParametros()"
+      />
+      <br />
+      <input type="button" value="alert" onClick="mostrarAlerta()" />
+      <br />
+      <input type="button" value="confirm" onClick="confirmar()" />
+      <br />
+      <input type="button" value="prompt" onClick="cargarCadena()" />
+    </form>
+
+    <script>
+      function abrir() {
+        let ventana = open();
+        ventana.document.write("Estoy escribiendo en la nueva ventana<br>");
+        ventana.document.write("Segunda linea");
+      }
+
+      function abrirParametros() {
+        let ventana = open(
+          "",
+          "",
+          "status=yes,width=400,height=250,menubar=yes"
+        );
+        ventana.document.write("Esto es lo primero que aparece<br>");
+      }
+
+      function mostrarAlerta() {
+        alert("Esta ventana de alerta ya la utilizamos en otros problemas.");
+      }
+
+      function confirmar() {
+        let respuesta = confirm("Presione alguno de los dos botones");
+        if (respuesta == true) alert("presionó aceptar");
+        else alert("presionó cancelar");
+      }
+
+      function cargarCadena() {
+        let cad = prompt("cargue una cadena:");
+        alert("Usted ingreso " + cad);
+      }
+
+    </script> -->
+
+    <!-- Confeccionar una página que permita abrir otra ventana cuando se presiona un botón. Dicha ventana debe tener como ancho 600 pixeles y alto 300 pixeles. -->
+    <!-- <input type="button" value="Abrir ventana" id="abrir" />
+
+    <script>
+      const ABRIR = document.getElementById("abrir");
+
+      ABRIR.addEventListener("click", () => {
+        let ventana = open("", "", "width=600,height=300");
+
+        ventana.document.write("Esta es la ventana con los requerimientos");
+      });
+    </script> -->
+
+    <!-- <a href="pagina2.html">Ir a la página 2</a>
+    <br />
+    <br />
+    <a href="javascript:avanzar()">Extraer del cache la segunda página</a>
+
+    <script>
+      function avanzar() {
+        window.history.go(1);
+      }
+    </script> -->
+
+    <!-- Propiedad screen del objeto window
+     Mostrar el valor almacenado en las cinco propiedades que tiene el objeto screen -->
+    <!-- <script>
+      document.write("Valores de las propiedades del objeto screen:<br>");
+      document.write("availHeight :" + screen.availHeight + "<br>");
+      document.write("availWidth :" + screen.availWidth + "<br>");
+      document.write("height :" + screen.height + "<br>");
+      document.write("width :" + screen.width + "<br>");
+      document.write("colorDepth :" + screen.colorDepth);
+
+      document.write("availHeight :" + screen.availHeight / 2 + "<br>");
+    </script> -->
+    <!-- 
+    Confeccionar un programa que al presionar un botón aparezca una ventana que
+    ocupe todo el ancho del monitor y la mitad de su altura. -->
+
+    <!-- <input type="button" id="click" value="Click me" />
+
+    <script>
+      const BUTTON = document.getElementById("click");
+
+      BUTTON.addEventListener("click", () => {
+        let window = open(
+          "",
+          "",
+          "width=" + screen.availWidth + ",height=" + screen.availHeight / 2
+        );
+      });
+    </script> -->
+
+    <!-- Propiedad navigator del objeto window -->
+    <!-- appName : almacena el nombre oficial del navegador. appVersion : almacena la
+    versión del navegador. cookieEnabled : almacena si las cookies están activas
+    en el navegador. platform : almacena la plataforma donde el navegador se
+    está ejecutando. plugins : almacena un array de los plugin cargados en el
+    navegador. muestrar los valores de las propiedades
+    antes anunciadas: -->
+    <!-- <script>
+      document.write("Valores de las propiedades del objeto navigator:<br>");
+      document.write("appName :" + navigator.appName + "<br>");
+      document.write("appVersion :" + navigator.appVersion + "<br>");
+      document.write("cookieEnabled :" + navigator.cookieEnabled + "<br>");
+      document.write("plugins :" + navigator.plugins.length + "<br>");
+    </script> -->
+
+    <!-- Crear un progranma que una vez que se cargue la página mostrar un alert indicando si el navegador tiene activas las cookies. -->
+
+    <!-- <script>
+      const activar = () => {
+        if (navigator.cookieEnabled === true) {
+          alert("el navegador tiene activas las cookies");
+        } else {
+          alert("el navegador tiene desactivada las cookies");
+        }
+      };
+    </script> -->
+
+    <!--Todo: Eventos: click y dblclick, este evento sirve para dar uno o dos click sobre un objeto (Ejemplo#1) -->
+    <!-- <script>
+      addEventListener("DOMContentLoaded", inicio);
+
+      function inicio() {
+        document
+          .getElementById("recuadro1")
+          .addEventListener("click", presion1);
+        document
+          .getElementById("recuadro2")
+          .addEventListener("dblclick", presion2);
+      }
+
+      function presion1() {
+        alert("se hizo click");
+      }
+
+      function presion2() {
+        alert("se hizo doble click");
+      }
+    </script>
+
+    <div
+      style="width: 200px; height: 200px; background: #ffff00"
+      id="recuadro1"
+    >
+      Prueba del evento click
+    </div>
+    <div
+      style="width: 200px; height: 200px; background: #ff5500"
+      id="recuadro2"
+    >
+      Prueba del evento dblclick
+    </div> -->
+
+    <!--Todo:Ejemplo#2 obviando el evento 'DOMContentLoaded':-->
+
+    <!-- <div
+      style="width: 200px; height: 200px; background: #ffff00"
+      id="recuadro1"
+    >
+      Prueba del evento click
+    </div>
+    <div
+      style="width: 200px; height: 200px; background: #ff5500"
+      id="recuadro2"
+    >
+      Prueba del evento dblclick
+    </div>
+
+    <script>
+      document.getElementById("recuadro1").addEventListener("click", presion1);
+      document
+        .getElementById("recuadro2")
+        .addEventListener("dblclick", presion2);
+
+      function presion1() {
+        alert("se hizo click");
+      }
+
+      function presion2() {
+        alert("se hizo doble click");
+      }
+    </script> -->
+    <!-- Realizar un programa que muestre en un div el número 2. Cada vez que se hace
+    doble clic sobre el mismo duplicar el valor contenido en el div. -->
+
+    <!-- <div style="width: 200px; height: 200px; background: #ffff00" id="numero">
+      2
+    </div>
+
+    <script>
+      let presionar = document.getElementById("numero");
+
+      presionar.addEventListener("dblclick", () => {
+        let valor = document.getElementById("numero").innerHTML;
+        valor = parseInt(valor);
+        let resultado = valor * 2;
+        document.getElementById("numero").innerHTML = resultado;
+      }); 
+     </script> 
+    -->
+
+    <!--Todo: Eventos: mousedown y mouseup -->
+    <!-- implementar una página que contenga dos div, a un div le asignaremos el evento mousedown y al otro el evento mouseup. Cuando ocurra el evento procederemos a cambiar el texto contenido dentro del div. -->
+
+    <!-- <p>Presione el recuadro amarillo sin soltar el botón del mouse.</p>
+    <div style="width:200px;height:200px;background:#ffff00" id="recuadro1">
+    </div>
+    <p>Presione el recuadro naranja y suelte el botón del mouse.</p>
+    <div style="width:200px;height:200px;background:#ff5500" id="recuadro2">
+    </div>
+
+    <script>
+        document.getElementById('recuadro1').addEventListener('mousedown', presion1);
+        document.getElementById('recuadro2').addEventListener('mouseup', presion2);
+
+        function presion1() {
+            document.getElementById('recuadro1').innerHTML = 'Se presione el mouse y todavía no se soltó';
+        }
+
+        function presion2() {
+            document.getElementById('recuadro2').innerHTML = 'Se presione el mouse y se soltó';
+        }
+    </script> -->
+    <!-- Elaborar un programa que muestre un div de color rojo. Cuando se presione
+    cambiar el color a amarillo y luego de soltar el botón del mouse volver a
+    pintar de rojo. -->
+    <!-- <div
+      style="width: 200px; height: 200px; background: #ff0000"
+      id="recuadro1"
+    ></div>
+
+    <script>
+      let presionar1 = document.getElementById("recuadro1");
+      presionar1.addEventListener("mousedown", () => {
+        document.getElementById("recuadro1").style.backgroundColor = "#ffff00";
+      });
+
+      let presionar2 = document.getElementById("recuadro1");
+      presionar2.addEventListener("mouseup", () => {
+        document.getElementById("recuadro1").style.backgroundColor = "#ff0000";
+      });
+    </script> -->
+
+    <!--Todo: Eventos: mouseover y mouseout -->
+    <!-- Implementar un pequeño ejemplo que muestre un cuadrado, el mismo mostrará los bordes redondeados cuando ingresemos la flecha del mouse en su interior y volverá al estado anterior cuando retiremos la flecha. -->
+    <!-- <div
+      style="width: 200px; height: 200px; background: #0000ff"
+      id="recuadro1"
+    ></div>
+
+    <script>
+      document.getElementById("recuadro1").addEventListener("mouseover", entrada);
+      document.getElementById("recuadro1").addEventListener("mouseout", salida);
+
+      function entrada() {
+        document.getElementById("recuadro1").style.borderRadius = "30px";
+      }
+
+      function salida() {
+        document.getElementById("recuadro1").style.borderRadius = "0px";
+      }
+    </script> -->
+    <!-- 
+    Mostrar un elemento de tipo H1, luego cuando se ingrese con el mouse dentro
+    del mismo cambiar el color a letra roja y color de fondo amarillo, luego
+    cuando se mueva la flecha del mouse fuera del elemento volver al color
+    original. -->
+    <!-- <div
+      style="width: 200px; height: 200px; background: #0000ff"
+      id="recuadro1"
+    >
+      <h1 id="texto">Texto de prueba</h1>
+    </div>
+    <script>
+      document.getElementById("recuadro1").addEventListener("mouseover", () => {
+        document.getElementById("recuadro1").style.backgroundColor = "#eedf08";
+        document.getElementById("texto").style.color = "#F70E06";
+      });
+
+      document.getElementById("recuadro1").addEventListener("mouseout", () => {
+        document.getElementById("recuadro1").style.backgroundColor = "#0000ff";
+        document.getElementById("texto").style.color = "#000";
+      });
+    </script> -->
+    <!-- Implementar un div que capture el evento mousemove y como acción
+    incrementaremos un contador para saber la cantidad de veces que se disparó
+    el evento. -->
+
+    <!-- <div
+      style="width: 200px; height: 200px; background: #0000ff"
+      id="recuadro1"
+    ></div>
+    <p id="cantidad">0</p>
+
+    <script>
+      document.getElementById("recuadro1").addEventListener("mousemove", mover);
+
+      function mover() {
+        let i = parseInt(document.getElementById("cantidad").innerHTML);
+        i++;
+        document.getElementById("cantidad").innerHTML = i;
+      }
+    </script> -->
+    <!--Todo: Eventos: keydown y keyup -->
+    <!--Implementar un programa que permita solo ingresar 140 caracteres y nos informe con un mensaje la cantidad de caracteres disponibles para seguir escribiendo. -->
+    <!-- <input type="text" id="texto" maxlength="140" size="140" />
+    <br />
+    <p>
+      Máxima cantidad de caracteres disponibles:<span id="cantidad">140</span>
+    </p>
+
+    <script>
+      document.getElementById("texto").addEventListener("keyup", presion);
+
+      function presion() {
+        let canti = document.getElementById("texto").value.length;
+        let disponibles = 140 - parseInt(canti);
+        document.getElementById("cantidad").innerHTML = disponibles;
+      }
+    </script> -->
+    <!--Todo: Evento: change -->
+    <!-- Implementar una aplicación que muestre un alert cada vez que sucede el
+    evento change para los controles checkbox, radio, select, text y textarea. -->
+    <!-- Evento change del checkbox:
+    <input type="checkbox" id="checkbox1" name="checkbox1" checked />
+    <br />
+    Evento change del radio:<br />
+    <input type="radio" name="radio1" id="radioa" /><br />
+    <input type="radio" name="radio1" id="radiob" /><br />
+    <input type="radio" name="radio1" id="radioc" /><br />
+    Evento change del select:
+    <select name="select1" id="select1">
+      <option value="argentina">Argentina</option>
+      <option value="chile">Chile</option>
+      <option value="uruguay">Uruguay</option>
+      <option value="paraguay">Paraguay</option>
+      <option value="bolivia">Bolivia</option>
+    </select>
+    <br />
+    <input type="text" name="text1" id="text1" />
+    <br />
+    <textarea name="text1" id="textarea1" rows="6" cols="80"></textarea>
+    <br />
+
+    <script>
+      document
+        .getElementById("checkbox1")
+        .addEventListener("change", cambiocheckbox);
+      document.getElementById("radioa").addEventListener("change", cambioradio);
+      document.getElementById("radiob").addEventListener("change", cambioradio);
+      document.getElementById("radioc").addEventListener("change", cambioradio);
+      document
+        .getElementById("select1")
+        .addEventListener("change", cambioselect);
+      document.getElementById("text1").addEventListener("change", cambiotext);
+      document
+        .getElementById("textarea1")
+        .addEventListener("change", cambiotextarea);
+
+      function cambiocheckbox() {
+        alert(document.getElementById("checkbox").checked);
+      }
+
+      function cambioradio() {
+        alert(
+          document.getElementById("radioa").checked +
+            " " +
+            document.getElementById("radiob").checked +
+            " " +
+            document.getElementById("radioc").checked
+        );
+      }
+
+      function cambioselect() {
+        alert(document.getElementById("select1").value);
+      }
+
+      function cambiotext() {
+        alert(document.getElementById("text1").value);
+      }
+
+      function cambiotextarea() {
+        alert(document.getElementById("textarea1").value);
+      }
+    </script> -->
+    <!-- Confeccionar un formulario que muestre un checkbox que cuando se tilde
+    active un botón (el checkbox debe mostrar un mensaje que diga : "Confirma
+    los términos y condiciones?") -->
+    <!-- <form>
+      <label
+        >Seleccionar
+        <input type="checkbox" , id="checkbox" , name="checkbox" checked />
+      </label>
+    </form>
+
+    <script>
+      document.getElementById("checkbox").addEventListener("change", () => {
+        if (document.getElementById("checkbox").checked === true) {
+          alert`Confirma los términos y condiciones?`;
+        } else {
+          alert`Términos y condiciones deseleccionados?`;
+        }
+      });
+    </script> -->
+
+    <!--Todo: Activar y desactivar boton -->
+    <!-- <input type="checkbox" id="checkbox1" name="checkbox1" /> Confirma los
+    términos y condiciones?
+    <br />
+    <input type="button" id="boton1" name="boton1" value="confirmar" disabled />
+
+    <script>
+      document.getElementById("checkbox1").addEventListener("change", () => {
+        if (document.getElementById("checkbox1").checked == true) {
+          document.getElementById("boton1").disabled = false;
+        } else document.getElementById("boton1").disabled = true;
+      });
+    </script> -->
+    <!--Todo: Eventos: focus y blur -->
+    <!-- Confeccionar un formulario que muestre dos controles de tipo text. El que
+    está con foco mostrar su texto de color rojo y aquel que no está
+    seleccionado el texto se debe mostrar de color negro. -->
+    <!-- <input type="text" id="text1" name="text1" size="30">
+    <br>
+    <input type="text" id="text2" name="text2" size="30">
+
+    <script>
+        document.getElementById('text1').addEventListener('focus', tomarfoco1);
+        document.getElementById('text2').addEventListener('focus', tomarfoco2);
+        document.getElementById('text1').addEventListener('blur', perderfoco1);
+        document.getElementById('text2').addEventListener('blur', perderfoco2);
+
+        function tomarfoco1() {
+            document.getElementById('text1').style.color = '#ff0000';
+        }
+
+        function tomarfoco2() {
+            document.getElementById('text2').style.color = '#ff0000';
+        }
+
+        function perderfoco1() {
+            document.getElementById('text1').style.color = '#000000';
+        }
+
+        function perderfoco2() {
+            document.getElementById('text2').style.color = '#000000';
+        }
+    </script> -->
+    <!--Todo: Parámetro del método asociado al addEventListener. -->
+    <!-- Implementar un panel con un conjunto de botones que nos permitan
+    ingresar un valor numérico presionando botones. Asociaremos el click de cada
+    botón con una única función. -->
+    <!-- <input type="button" id="boton0" name="boton0" value="0" class="boton" />
+    <input type="button" id="boton1" name="boton1" value="1" class="boton" />
+    <input type="button" id="boton2" name="boton2" value="2" class="boton" />
+    <input type="button" id="boton3" name="boton3" value="3" class="boton" />
+    <input type="button" id="boton4" name="boton4" value="4" class="boton" />
+    <input type="button" id="boton5" name="boton5" value="5" class="boton" />
+    <input type="button" id="boton6" name="boton6" value="6" class="boton" />
+    <input type="button" id="boton7" name="boton7" value="7" class="boton" />
+    <input type="button" id="boton8" name="boton8" value="8" class="boton" />
+    <input type="button" id="boton9" name="boton9" value="9" class="boton" />
+    <br />
+    <div id="resultado"></div>
+
+    <script>
+      for (let i = 0; i <= 9; i++) {
+        document
+          .getElementById("boton" + i).addEventListener("click", (evt) => {
+            document.getElementById("resultado").innerHTML =
+            document.getElementById("resultado").innerHTML + evt.target.value;
+          });
+      }
+    </script> -->
+    <!--Todo: Evento: submit -->
+    <!-- implementar un formulario que solicita la carga de una clave y la repetición de la misma. Luego cuando se presione un botón de tipo "submit" verificaremos que las dos claves ingresadas sean iguales. -->
+    <!-- <form method="post" action="procesar.php" id="formulario1">
+      Ingrese clave:
+      <input type="password" id="clave1" name="clave1" size="20" required />
+      <br />
+      Repita clave:
+      <input type="password" id="clave2" name="clave2" size="20" required />
+      <br />
+      <input type="submit" id="confirmar" name="confirmar" value="Confirmar" />
+    </form>
+
+    <script>
+      document.getElementById("formulario1").addEventListener("submit", validar);
+
+      function validar(evt) {
+        let cla1 = document.getElementById("clave1").value;
+        let cla2 = document.getElementById("clave2").value;
+        if (cla1 != cla2) {
+          alert("Las claves ingresadas son distintas");
+          // El metodo preventDefault() evita el comportamiento por defecto del navegador
+          evt.preventDefault();
+        }
+      }
+    </script> -->
+    
+  </body>
+</html>

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Controles FORM, BUTTON y TEXT. -->
+
+    <!-- Confeccionar un formulario que permita ingresar el nombre y edad de una persona: -->
+
+    <!-- <form>
+      <label>Ingrese su nombre:<input type="text" id="nombre" /></label>
+      <label>Ingrese su edad:<input type="text" id="edad" /></label>
+      <label
+        ><input type="button" value="Confirmar" onClick="mostrar()"
+      /></label>
+    </form>
+
+    <script>
+      function mostrar() {
+        let nombre = document.getElementById("nombre").value;
+        let edad = document.getElementById("edad").value;
+        alert("Ingreso el nombre " + nombre);
+        alert("Ingreso la edad " + edad);
+      }
+    </script> -->
+
+    <!-- Crear un programa que permita cargar un entero en un text y al presionar un botón nos muestre dicho valor elevado al cubo (emplear la función alert). -->
+
+    <!-- <form>
+      <label>Digiste un numero <input type="text" id="numero" /></label>
+      <input type="button" value="Enviar" onclick="mostrar()" />
+    </form>
+
+    <script>
+      function mostrar() {
+        let num = document.getElementById("numero").value;
+        let convert = parseInt(num);
+        let cubo = Math.pow(convert, 3);
+        alert("El numero elevado al cubo " + cubo);
+      }
+    </script> -->
+
+    <!-- Cargar dos números en objetos de tipo text y al presionar un botón, mostrar el mayor. -->
+
+    <!-- <form>
+      <label>Primer numero <input type="text" id="numero1" /></label>
+      <br />
+      <label>Segundo numero <input type="text" id="numero2" /></label>
+      <br />
+      <input type="submit" value="Enviar" onclick="mostrar()" />
+    </form>
+
+    <script>
+      function mostrar() {
+        let num1 = parseInt(document.getElementById("numero1").value);
+        let num2 = parseInt(document.getElementById("numero2").value);
+
+        if (num1 > num2) {
+          alert("El numero mayor es:" + num1);
+        } else {
+          alert("El numero mayor es:" + num2);
+        }
+      }
+    </script> -->
+
+    <!-- Cargar un nombre y un apellido en sendos text. Al presionar un botón, concatenarlos y mostrarlos en un tercer text (Tener en cuenta que podemos modificar la propiedad value de un objeto TEXT cuando ocurre un evento) -->
+    <!-- <form>
+      <label>Ingrese nombre:<input type="text" id="nombre" /></label>
+      <label>Ingrese apellido:<input type="text" id="apellido" /></label>
+      <input
+        type="button"
+        value="Concatenar datos ingresados"
+        onClick="concatenar()"
+      />
+      <input type="text" id="resultado" />
+    </form>
+
+    <script>
+      function concatenar() {
+        let nom = document.getElementById("nombre").value;
+        let ape = document.getElementById("apellido").value;
+        document.getElementById("resultado").value = nom + ape;
+      }
+    </script> -->
+
+    <!-- Codificar una página que permita ingresar una password y luego muestre una ventana de alerta si tiene menos de 5 caracteres. -->
+
+    <!-- <form>
+      <input type="submit" value="Enviar" onclick="enviar()" />
+      <input type="password" id="idPassword" />
+    </form>
+
+    <script>
+      function enviar() {
+        let password = document.getElementById("idPassword").value;
+
+        if (password.length < 5) {
+          alert('La clave no puede tener menos de 5 caracteres!!!');
+        } else {
+         alert('Largo de clave correcta');
+        }
+      }
+    </script> -->
+
+    <!-- Disponer dos campos de texto tipo password. Cuando se presione un botón mostrar si las dos claves ingresadas son iguales o no (es muy común solicitar al operador el ingreso de dos veces de su clave para validar si las escribió correctamente, esto se hace cuando se crea una password para el ingreso a un sitio o para el cambio de una existente).
+    Tener en cuenta que podemos emplear el operador == para ver si dos string son iguales. -->
+
+    <!-- <form>
+      <input type="password" id="password1" />
+      <br />
+      <input type="password" id="password2" />
+      <br />
+      <input type="submit" value="Enviar" onclick="verificar()" />
+    </form>
+
+    <script>
+      function verificar() {
+        let input1 = document.getElementById("password1").value;
+        let input2 = document.getElementById("password2").value;
+
+        if (input1 === input2) {
+          alert("Las contraseñas coinciden");
+        } else {
+          alert("Las contraseñas no coinciden");
+        }
+      }
+    </script> -->
+
+    <!-- Control SELECT -->
+    <!--!! Observar el video si tienes cualquier duda https://www.youtube.com/watch?v=oknHHDRMFvE -->
+
+    <!-- <form>
+      <p>
+        <select id="select1" onChange="cambiarColor()">
+          <option value="ff0000">Rojo</option>
+          <option value="00ff00">Verde</option>
+          <option value="0000ff">Azul</option>
+        </select>
+      </p>
+      <p>
+        Número de índice seleccionado del objeto SELECT:<input
+          type="text"
+          id="text1"
+        />
+      </p>
+      <p>Texto seleccionado:<input type="text" id="text2" /></p>
+      <p>Valor asociado:<input type="text" id="text3" /></p>
+    </form>
+
+    <script>
+      function cambiarColor() {
+        let seleccion = document.getElementById("select1");
+        document.getElementById("text1").value = seleccion.selectedIndex;
+        document.getElementById("text2").value =
+          seleccion.options[seleccion.selectedIndex].text;
+        document.getElementById("text3").value =
+          seleccion.options[seleccion.selectedIndex].value;
+      }
+    </script> -->
+
+    <!-- Confeccionar una página que muestre un objeto SELECT con distintos tipos de pizzas (Jamón y Queso, Muzzarella, Morrones). Al seleccionar una, mostrar en un objeto de tipo TEXT el precio de la misma. -->
+    <!-- 
+    <form>
+      <select name="select" id="seleccion" onChange="mostrar()">
+        <option value="2000">Pizza de jamón</option>
+        <option value="3000">Pizza de queso</option>
+        <option value="4000">Pizza Muzzarella</option>
+        <option value="5000">Pizza Morrones</option>
+      </select>
+
+      <input type="text" name="input" id="texto" />
+    </form>
+
+    <script>
+      function mostrar() {
+        let seleccion = document.getElementById("seleccion");
+        document.getElementById("texto").value =
+          seleccion.options[seleccion.selectedIndex].value;
+      }
+    </script> -->
+
+    <!-- Generar un presupuesto de un equipo de computación a partir de tres objetos de tipo SELECT que nos permiten seleccionar:
+    Procesador (Intel I3 - $400, Intel I5 $600, Intel I7 $800).
+    Monitor (Samsung 20' - $250, Samsung 22' - $350, Samsung 26' - $550)
+    Disco Duro(500 Gb - $300, 1 Tb - $440, 3 Tb - $500)
+    Para cada característica indicamos string a mostrar (Ej. Intel I3) y el valor asociado a dicho string (Ej. 400).
+    Al presionar un botón "Calcular" mostrar el presupuesto en un objeto de tipo TEXT. -->
+
+    <!-- <form>
+      <label
+        >Procesador
+        <select name="select1" id="procesador" onchange="calcular()">
+          <option value="400">Intel I3</option>
+          <option value="600">Intel I5</option>
+          <option value="800">Intel I7</option>
+        </select>
+      </label>
+
+      <input type="text" name="input1" id="text1" />
+
+      <label
+        >Monitor
+        <select name="select2" id="monitor" onchange="calcular()">
+          <option value="250">Samsung 20'</option>
+          <option value="350">Samsung 22'</option>
+          <option value="550">Samsung 26'</option>
+        </select>
+      </label>
+      <input type="text" name="input2" id="text2" />
+
+      <label
+        >Disco Duro
+        <select name="select3" id="discoDuro" onchange="calcular()">
+          <option value="300">500 Gb</option>
+          <option value="440">1 Tb</option>
+          <option value="500">3 Tb</option>
+        </select>
+      </label>
+      <input type="text" name="input3" id="text3" />
+    </form>
+
+    <form>
+      <input type="button" value="Calcular" onclick="resultado()" />
+      <input type="text" id="suma" />
+    </form>
+
+    <script>
+      let valor1;
+      let valor2;
+      let valor3;
+
+      function calcular() {
+        let intel = document.getElementById("procesador");
+        valor1 = document.getElementById("text1").value =
+          intel.options[intel.selectedIndex].value;
+
+        let monitor = document.getElementById("monitor");
+        valor2 = document.getElementById("text2").value =
+          monitor.options[monitor.selectedIndex].value;
+
+        let discoDuro = document.getElementById("discoDuro");
+        valor3 = document.getElementById("text3").value =
+          discoDuro.options[discoDuro.selectedIndex].value;
+      }
+
+      function resultado() {
+        valor1 = parseInt(valor1);
+        valor2 = parseInt(valor2);
+        valor3 = parseInt(valor3);
+        let resultado = valor1 + valor2 + valor3;
+
+        document.getElementById("suma").value = resultado;
+      }
+    </script> -->
+
+    <!-- Confeccionar una página que permita seleccionar una pizza y la cantidad de
+    unidades. Luego al presionar un botón calcular el importe a pagar. Utilizar
+    un objeto de la clase SELECT para la selección de la pizza, pudiendo ser:
+    Queso: $ 4. Jamón y queso: $ 6. Especial: $ 10. A la cantidad de pizzas
+    cargarla en un objeto de la clase TEXT y en otro objeto de la clase TEXT
+    mostrar el importe total a abonar. -->
+    <!-- 
+    <form>
+      <label for="label1">Pizza</label>
+      <select name="select1" id="pizzas">
+        <option value="4000">Pizza de queso</option>
+        <option value="10000">Pizza especial</option>
+        <option value="6000">Pizza de jamon y queso</option>
+      </select>
+
+      <label for="label2">Cantidad</label>
+      <input type="text1" id="cantidad" />
+
+      <label for="label3">Importe total</label>
+      <input type="text2" id="importeTotal" />
+
+      <br />
+      <input type="button" value="Calcular" onclick="importe()" />
+    </form>
+
+    <script>
+      function importe() {
+        let pizza = document.getElementById("pizzas");
+        // Metodo para tomar el valor de la pizza (value="4000"/value="10000"/value="6000")
+        let valor1 = pizza.options[pizza.selectedIndex].value;
+
+        let cantidad = document.getElementById("cantidad").value;
+
+        valor1 = parseInt(valor1);
+        cantidad = parseInt(cantidad);
+
+        let importe = valor1 * cantidad;
+        document.getElementById("importeTotal").value = importe;
+      }
+    </script> -->
+
+    <!-- Confeccionar una página que permita tomar un examen múltiple choice. Se debe mostrar una pregunta y seguidamente un objeto SELECT con las respuestas posibles. Al presionar un botón mostrar la cantidad de respuestas correctas e incorrectas (Disponer 4 preguntas y sus respectivos controles SELECT) -->
+    <!-- 
+    <p>what does the mean throw away</p>
+    <form>
+      <select name="select1" id="answer1">
+        <option value="1">tirar a un recipiente</option>
+        <option value="2">tirar en algun lugar</option>
+        <option value="3">tirar en la lavadora</option>
+      </select>
+    </form>
+
+    <p>what does the mean ads</p>
+    <select name="select2" id="answer2">
+      <option value="1">Carta</option>
+      <option value="2">Avisos</option>
+      <option value="3">Avion</option>
+    </select>
+    <br />
+
+    <p>what does the mean team up</p>
+    <select name="select3" id="answer3">
+      <option value="1">equipo</option>
+      <option value="2">trabajo</option>
+      <option value="3">con formar un trabajo</option>
+    </select>
+
+    <p>what does the mean tear up</p>
+    <select name="select4" id="answer4">
+      <option value="1">Comer</option>
+      <option value="2">Rasgar</option>
+      <option value="3">Cortar</option>
+    </select>
+
+    <input type="button" value="Respuesta" onclick="respuestas()" />
+    <p>Respuesta in correctas</p>
+    <span id="respuesta1"> </span>
+    <p>Respuesta correctas</p>
+    <span id="respuesta2"> </span>
+    <script>
+      function respuestas() {
+        let x = 0;
+        let z = 0;
+        let select1 = document.getElementById("answer1");
+        let valor1 = select1.options[select1.selectedIndex].value;
+
+        let select2 = document.getElementById("answer2");
+        let valor2 = select2.options[select2.selectedIndex].value;
+
+        let select3 = document.getElementById("answer3");
+        let valor3 = select3.options[select3.selectedIndex].value;
+
+        let select4 = document.getElementById("answer4");
+        let valor4 = select4.options[select4.selectedIndex].value;
+
+        if (valor1 != 1) {
+          z += 1;
+          // alert("Respuesta incorrecta");
+        } else {
+          // alert("respuesta correcta");
+          x += 1;
+        }
+
+        if (valor2 != 2) {
+          z += 1;
+        } else {
+          x += 1;
+        }
+
+        if (valor3 != 3) {
+          z += 1;
+        } else {
+          x += 1;
+        }
+
+        if (valor4 != 2) {
+          z += 1;
+        } else {
+          x += 1;
+        }
+
+        document.getElementById("respuesta1").innerText = z;
+        document.getElementById("respuesta2").innerText = x;
+      }
+    </script> -->
+
+    <!-- Control CHECKBOX 
+    Confeccionar una página que muestre 4 lenguajes de programación que el usuario puede seleccionar si los conoce. Luego mostrar un mensaje indicando la cantidad de lenguajes que ha seleccionado el operador. -->
+
+    <!-- <form>
+      <input type="checkbox" id="checkbox1" />JavaScript
+      <br />
+      <input type="checkbox" id="checkbox2" />PHP
+      <br />
+      <input type="checkbox" id="checkbox3" />JSP
+      <br />
+      <input type="checkbox" id="checkbox4" />VB.Net
+      <br />
+      <input type="button" value="Mostrar" onClick="contarSeleccionados()" />
+    </form>
+
+    <script>
+      function contarSeleccionados() {
+        let cant = 0;
+        if (document.getElementById("checkbox1").checked) {
+          cant++;
+        }
+        if (document.getElementById("checkbox2").checked) {
+          cant++;
+        }
+        if (document.getElementById("checkbox3").checked) {
+          cant++;
+        }
+        if (document.getElementById("checkbox4").checked) {
+          cant++;
+        }
+        alert("Conoce " + cant + " lenguajes");
+      }
+    </script> -->
+
+    <!-- Confeccionar una página que muestre tres checkbox que permitan seleccionar los deportes que practica el usuario (Fútbol, Básket, Tenis) Mostrar al presionar un botón los deportes que eligió. -->
+
+    <!-- <form>
+      <label>
+        <input type="checkbox" id="checkbox1" name="lengauje1" />
+        Fútbol
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" id="checkbox2" name="lengauje2" />
+        Básket
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" id="checkbox3" name="lengauje3" />
+        Tenis
+      </label>
+      <br />
+      <input
+        type="button"
+        value="Mostrar"
+        id="button"
+        onclick="monstrarLenguajes()"
+      />
+      <p>Lenguajes selecionados</p>
+
+      <span id="mostrar"></span>
+    </form>
+
+    <script>
+      function monstrarLenguajes() {
+        let deporte = "";
+
+        if (document.getElementById("checkbox1").checked) {
+          
+          deporte +=  " -Futbol";
+        }
+
+        if (document.getElementById("checkbox2").checked) {
+          deporte += " -Bascket";
+        }
+
+        if (document.getElementById("checkbox3").checked) {
+          deporte += " -Tenis";
+        }
+
+        document.getElementById("mostrar").innerText = deporte;
+      }
+    </script> -->
+
+    <!-- Control RADIO
+     Mostrar cuatro objetos de tipo RADIO que permitan seleccionar
+    los estudios que tiene un usuario: -->
+    <!-- 
+        <form>
+        <input type="radio" id="radio1" name="estudios">Sin estudios
+        <br>
+        <input type="radio" id="radio2" name="estudios">Primarios
+        <br>
+        <input type="radio" id="radio3" name="estudios">Secundarios
+        <br>
+        <input type="radio" id="radio4" name="estudios">Universitarios
+        <br>
+        <input type="button" value="Mostrar" onClick="mostrarSeleccionado()">
+    </form>
+
+    <script>
+        function mostrarSeleccionado() {
+            if (document.getElementById('radio1').checked) {
+                alert('no tienes estudios');
+            }
+            if (document.getElementById('radio2').checked) {
+                alert('tienes estudios primarios');
+            }
+            if (document.getElementById('radio3').checked) {
+                alert('tienes estudios secundarios');
+            }
+            if (document.getElementById('radio4').checked) {
+                alert('tienes estudios universitarios');
+            }
+        }
+    </script> -->
+    <!-- Confeccionar una página que muestre dos objetos de la clase RADIO solicitando que seleccione si es mayor de 18 años o no. Al presionar un botón mostrar un alert indicando si puede ingresar al sitio o no. -->
+
+    <!-- <form>
+      <p>¿Es mayor de edad?</p>
+      <label><input type="radio" id="radio1" name="edad" />si</label>
+      <label><input type="radio" id="radio2" name="edad" />no</label>
+      <input type="button" value="Verificar" onClick="verificar()" />
+    </form>
+
+    <script>
+      function verificar() {
+        if (document.getElementById("radio1").checked) {
+          alert("Eres mayor de edad y por lo tanto puede ingresar");
+        }
+        if (document.getElementById("radio2").checked) {
+          alert("No eres mayor de edad y por lo tanto no puede ingresar");
+        }
+      }
+    </script> -->
+
+    <!-- Control TEXTAREA -->
+    <!-- Solicitar la carga del mail y el curriculum de una persona. Mostrar un mensaje si el curriculum supera los 2000 caracteres. -->
+    <!-- <form>
+      <p><textarea id="curriculum" rows="10" cols="50"></textarea></p>
+      <p>
+        <input type="button" value="Mostrar" onClick="controlarCaracteres()" />
+      </p>
+    </form>
+
+    <script>
+      function controlarCaracteres() {
+        if (document.getElementById("curriculum").value.length > 2000) {
+          alert("curriculum muy largo");
+        } else {
+          alert("datos correctos");
+        }
+      }
+    </script> -->
+
+    <!-- Confeccionar una página de visitas a un sitio, solicitar ingresar el nombre de una persona, su mail y los comentarios (TEXTAREA). Mostrar luego llamando a la función alert los datos ingresados. -->
+
+    <!-- <form>
+      <label
+        >Nombre
+        <input type="text" name="name" id="nombrePersona" />
+      </label>
+
+      <label
+        >Mail
+        <input type="email" name="mail" id="mailPersona" />
+      </label>
+      <br />
+      <p>Comentario</p>
+
+      <textarea
+        name="comentario"
+        id="comentarioPersona"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br />
+
+      <input type="button" value="mostrar" onclick="verificar()" />
+    </form>
+
+    <script>
+      function verificar() {
+        let nombre = document.getElementById("nombrePersona").value;
+        let email = document.getElementById("mailPersona").value;
+        let comentario = document.getElementById("comentarioPersona").value;
+
+        alert(
+          `Nombre: ${nombre} \nApellido: ${email} \nComentario: ${comentario} `
+        );
+      }
+    </script> -->
+    <!-- 
+     <form>
+        Ingrese nombre:
+        <input type="text" id="nombre"><br> Ingrese mail:
+        <input type="text" id="mail"><br> Comentarios:
+        <br>
+        <textarea id="comentarios" rows="20" cols="100"></textarea><br>
+        <input type="button" value="confirmar" onClick="verificar()">
+    </form>
+
+    <script>
+        function verificar() {
+            let nombre = document.getElementById('nombre').value;
+            let mail = document.getElementById('mail').value;
+            let comentarios = document.getElementById('comentarios').value;
+            alert(nombre + '\n' + mail + '\n' + comentarios);
+        }
+    </script> -->
+
+    <!-- calcular altura de triangulo isoseles -->
+
+    <!-- Esto iria en el html -->
+    <form>
+      <label
+        >Altura
+        <input type="text" id="input1" />
+      </label>
+
+      <label
+        >Base
+        <input type="text" id="input2" />
+      </label>
+      <input type="button" id="input3" value="Calcular" />
+    </form>
+
+    <!-- Esto iria en el documento js -->
+    <script>
+      const BUTTON = document.getElementById("input3");
+
+      BUTTON.addEventListener("click", function () {
+        let vacio = "";
+        let altura1 = document.getElementById("input1").value;
+        // let altura2 = document.getElementById("input2").value;
+        let base = document.getElementById("input2").value;
+
+        if (altura1 === vacio || base === vacio) {
+          alert("Campos vacios");
+        } else if (altura1 === base) {
+          alert("Las medidas no conrresponde a un triangulos isosceles");
+        } else {
+          let calcularAltura = Math.pow(altura1, 2);
+          let calcularBase = base / 2;
+          let restar = calcularAltura - calcularBase;
+
+          let resultado = Math.sqrt(restar);
+
+          // Metodo para convertir decimales a numero entero( Math.trunc)
+
+          alert(
+            "La altura del triangulo isosceles es: " + Math.trunc(resultado)
+          );
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<!-- const BUTTON = document.getElementById("buttonClick");
+
+      BUTTON.addEventListener("click", () => {
+        alert("Hola");
+      }); -->

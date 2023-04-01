@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Se desea guardar los sueldos de 5 operarios.
+Empleando un arreglo que permita resolver el ejercicio propuesto. -->
+
+    <!-- <script>
+      let vector = [];
+      for (let i = 0; i < 5; i++) {
+        let sueldo = parseInt(prompt("Ingrese sueldo"));
+        vector.push(sueldo);
+        document.write(`${vector[i]}<br>`);
+      }
+    </script> -->
+
+    <!-- Definir un arreglo de 5 componentes de tipo Float que representen las
+    alturas de 5 personas. Obtener el promedio de las mismas. Contar cuántas
+    personas son más altas que el promedio y cuántas más bajas. -->
+    <script>
+      // let suma = 0;
+      // let vector = [];
+      // let altura;
+      // for (let i = 0; i < 3; i++) {
+      //   altura = parseFloat(prompt(`Ingrese altura`));
+      //   vector.push(altura);
+      //   suma += vector[i];
+      // }
+      // let promedio = suma / 3;
+      // document.write(`Promedio de las alturas${promedio}<br>`);
+
+      // let altos = 0;
+      // let bajos = 0;
+
+      // for (let i = 0; i < 3; i++) {
+      //   if (vector[i] > promedio) {
+      //     altos++;
+      //   }
+      //   if (vector[i] < promedio) {
+      //     bajos++;
+      //   }
+      // }
+
+      // document.write(
+      //   `Cantidad de personas más altas que el promedio:${altos}<br>`
+      // );
+      // document.write(`Cantidad de personas más bajas que el promedio:${bajos}`);
+    </script>
+
+    <!--Todo: Cargar un arreglo de 10 elementos de tipo entero y verificar posteriormente si el mismo está ordenado de menor a mayor. -->
+    <script>
+      // let arreglo = [1, 4, 7, 8, 6, 9, 2, 10, 3, 5];
+      // // let arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+      // for (let i = 0; i < arreglo.length; i++) {
+      //   arreglo[i];
+      // }
+      // let ordenado = true;
+
+      // for (let i = 0; i < arreglo.length; i++) {
+      //   if (arreglo[i + 1] < arreglo[i]) {
+      //     ordenado = false;
+      //   }
+      // }
+      // if (ordenado) {
+      //   document.write("Los elementos están ordenados de menor a mayor");
+      // } else {
+      //   document.write("Los elementos No están ordenados de menor a mayor");
+      // }
+    </script>
+    <!-- Cargar un arreglo de 10 elementos de tipo entero. Imprimir luego el primer y último elemento. -->
+    <script>
+      // let arreglo = [];
+
+      // for (let i = 0; i < 10; i++) {
+      //   let elemento = parseInt(prompt("Ingrese elemento"));
+      //   arreglo.push(elemento);
+      // }
+      // document.write(`${arreglo[0]}<br>`);
+      // document.write(`${arreglo[9]}<br>`);
+    </script>
+    <!-- Cargar un arreglo de 5 elementos de tipo entero. Imprimir luego todo el arreglo. -->
+    <script>
+      // let arreglo = [];
+
+      // for (let i = 0; i < 5; i++) {
+      //   let elemento = parseInt(prompt("Ingrese el elemento"));
+
+      //   arreglo.push(elemento);
+
+      //   document.write(`-${arreglo[i]}`);
+      // }
+    </script>
+    <!-- Desarrollar un programa que permita ingresar un arreglo de 8 elementos enteros, e informe:
+      El valor acumulado de todos los elementos.
+      El valor acumulado de los elementos que sean mayores a 36.
+      Cantidad de valores mayores a 50.
+      (Definir dos for, en el primero realizar la carga y en el segundo proceder a analizar cada elemento) -->
+    <script>
+      // let arreglo = [];
+      // let suma = 0;
+      // let sumaMayores36 = 0;
+      // let sumaMayores50 = 0;
+      // for (let i = 0; i < 3; i++) {
+      //   let elemento = parseInt(prompt("Ingrese el elemento"));
+
+      //   arreglo.push(elemento);
+      //   suma += arreglo[i];
+
+      //   if (arreglo[i] > 36) {
+      //     sumaMayores36 += arreglo[i];
+      //   }
+
+      //   if (arreglo[i] > 50) {
+      //     sumaMayores50++;
+      //   }
+      // }
+      // document.write(`Valor acumulado de todos los elementos:${suma}<br>`);
+      // document.write(
+      //   ` Valor acumulado de los elementos que son mayores a 36:${sumaMayores36}<br>`
+      // );
+      // document.write(`  Cantidad de valores mayores a 50:${sumaMayores50}`);
+    </script>
+    <!-- Realizar un programa que pida la carga de dos arreglos numéricos enteros de
+    4 elementos. Obtener la suma de los dos arreglos elemento a elemento, dicho
+    resultado guardarlo en un tercer arreglo del mismo tamaño. -->
+    <script>
+      // let arreglo1 = new Array(4);
+      // let arreglo2 = new Array(4);
+      // let arreglo3 = new Array(4);
+
+      // for (let i = 0; i < arreglo1.length; i++) {
+      //   let elemnto1 = parseInt(prompt("Ingrese elemento del primer arreglo"));
+      //   arreglo1[i] = elemnto1;
+      //   document.write(`${arreglo1[i]}<br>`);
+      // }
+
+      // document.write(
+      //   "<------------------------------------------------------------><br>"
+      // );
+
+      // for (let i = 0; i < arreglo2.length; i++) {
+      //   let elemnto2 = parseInt(prompt("Ingrese elemento del segundo arreglo"));
+      //   arreglo2[i] = elemnto2;
+      //   document.write(`${arreglo2[i]}<br>`);
+      // }
+      // document.write(
+      //   "<------------------------------------------------------------><br>"
+      // );
+
+      // for (let i = 0; i < arreglo3.length; i++) {
+      //   arreglo3[i] = arreglo1[i] + arreglo2[i];
+      //   document.write(`${arreglo3[i]}<br>`);
+      // }
+    </script>
+    <!-- Implementaremos un programa que cree 5 Array, cargue algunos elementos y
+    muestre la primer componente de cada uno de ellos -->
+    <script>
+      // let arreglo1 = [1, 2, 3];
+      // let arreglo2 = [4, 5, 6];
+      // let arreglo3 = [7, 8, 9];
+      // let arreglo4 = [10, 11, 12];
+      // let arreglo5 = [13, 14, 15];
+      // document.write(`${arreglo1[0]}<br>`);
+      // document.write(`${arreglo2[0]}<br>`);
+      // document.write(`${arreglo3[0]}<br>`);
+      // document.write(`${arreglo4[0]}<br>`);
+      // document.write(`${arreglo5[0]}<br>`);
+    </script>
+    <!-- Confeccionar un programa que defina dos array, en uno almacenar los días de
+    la semana y en otro los nombres de los meses. Emplear dos sintaxis
+    diferentes para crear e inicializar sus componentes. -->
+    <script>
+      // let diasSemana = [
+      //   "Lunes",
+      //   "Martes",
+      //   "Miercoles",
+      //   "Jueves",
+      //   "Viernes",
+      //   "Sabado",
+      //   "Domingo",
+      // ];
+
+      // for (let i = 0; i < diasSemana.length; i++) {
+      //   document.write(`${diasSemana[i]}<br>`);
+      // }
+
+      // document.write("<------------------------------------------------------><br>")
+
+      // mesesDelAño = [
+      //   "Enero",
+      //   "Febrero",
+      //   "Marzo",
+      //   "Abril",
+      //   "Mayo",
+      //   "Junio",
+      //   "Julio",
+      //   "Agosto",
+      //   "Septiembre",
+      //   "Octubre",
+      //   "Noviembre",
+      //   "Diciembre",
+      // ];
+      // for (let i = 0; i < mesesDelAño.length; i++) {
+      //   document.write(`${mesesDelAño[i]}<br>`);
+      // }
+    </script>
+    <!-- Crear un vector vacío. Mediante una estructura repetitiva solicitar la carga de elementos por teclado hasta que se ingrese el cero. No almacenar dicho valor en el vector. Luego sumar todas las componentes del vector, mostrar dicha suma y el tamaño del vector. -->
+    <script>
+      // let vector = [];
+      // let elemento;
+      // let suma = 0;
+
+      // document.write("Numero ingresados:<br>");
+      // for (let i = 0; elemento != 0; i++) {
+      //   elemento = parseInt(
+      //     prompt("Ingrese un valor entero (0 para finalizar")
+      //   );
+
+      //   if (elemento != 0) {
+      //     vector.push(elemento);
+      //     suma += vector[i];
+      //     document.write(`-${vector[i]}`);
+      //   }
+      // }
+      // document.write(`<br>Suma del vector:${suma}<br>`);
+
+      // document.write(`Tamaño del vector:${vector.length}`);
+    </script>
+    <!-- Crear un vector con 10 valores aleatorios comprendidos entre 1 y 500. Luego crear otros dos vectores y copiar los elementos mayores a 250 en el segundo vector y los menores o iguales a 250 en el tercer vector. Imprimir los tamaños del segundo y tercer vector. Imprimir los tres vectores. -->
+    <script>
+      // let vectorAleatorio = [];
+      // let vectorMayor = [];
+      // let vectorMenor = [];
+
+      // document.write("Vector aleatorio<br>");
+      // for (let i = 0; i < 10; i++) {
+      //   let num = parseInt(Math.random() * 500) + 1;
+      //   vectorAleatorio.push(num);
+      //   document.write(`${vectorAleatorio[i]}-`);
+
+      //   if (num > 250) {
+      //     vectorMayor.push(vectorAleatorio[i]);
+      //   } else {
+      //     vectorMenor.push(vectorAleatorio[i]);
+      //   }
+      // }
+
+      // document.write("<br>Vector mayores a 250<br>");
+      // for (let i = 0; i < vectorMayor.length; i++) {
+      //   document.write(`${vectorMayor[i]}<br>`);
+      // }
+      // document.write("Vector menores a 250<br>");
+      // for (let i = 0; i < vectorMenor.length; i++) {
+      //   document.write(`${vectorMenor[i]}<br>`);
+      // }
+
+      // document.write(
+      //   `Tamaño del vector aleatorio:${vectorAleatorio.length}<br>`
+      // );
+      // document.write(
+      //   `Elementos mayores del segundo vector:${vectorMayor.length}<br>`
+      // );
+      // document.write(
+      //   `Elementos menores del tercer vector:${vectorMenor.length}<br>`
+      // );
+    </script>
+
+    <!-- Array: no densos o dispersos -->
+    <script>
+      // let vec = [];
+      // vec[5] = 1000;
+      // vec[10] = 200;
+      // document.write("Atributo length:" + vec.length + "<br>");
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + "<br>");
+      // }
+    </script>
+
+    <!-- Ingresar por teclado un nro de cliente y el monto a depositar. Almacenar en
+    un vector, utilizar como subíndice el nro de cliente y almacenar el monto
+    depositado. Sumar todos los depósitos recorriendo el vector e identificando
+    las componentes cargadas (es decir las que tienen un valor distinto a
+    undefined). Imprimir la suma total depositada y la cantidad de clientes que
+    depositaron. -->
+    <script>
+      // let depositos = [];
+      // let nro, monto;
+      // do {
+      //   nro = prompt("Ingrese nro de cliente (0 finalizar)");
+      //   nro = parseInt(nro);
+      //   if (nro != 0) {
+      //     monto = prompt("Ingrese monto a depositar");
+      //     monto = parseInt(monto);
+      //     depositos[nro] = monto;
+      //   }
+      // } while (nro != 0);
+      // let suma = 0;
+      // let canti = 0;
+      // for (let i = 0; i < depositos.length; i++) {
+      //   if (depositos[i] != undefined) {
+      //     suma = suma + depositos[i];
+      //     canti++;
+      //   }
+      // }
+      // document.write("Cantidad de depósitos:" + canti + "<br>");
+      // document.write("Total depositado por todos los clientes:" + suma);
+    </script>
+    <!-- Crear un vector disperso que representen premios de una rifa. Las posiciones
+    indican los números que tienen premio. Almacenar en dichas posiciones los
+    premios. Genera 10 premios con los montos 1000,2000,3000 etc. La cantidad de
+    números de la rifa son 1000. Generar valores aleatorios para los números con
+    premio. Imprimir Los números con premio y los montos de los mismos. -->
+
+    <script>
+      // let carton = [];
+      // let cant = 0;
+      // do {
+      //   let premio = parseInt(Math.random() * 1000);
+      //   carton[premio] = 1000 * (cant + 1);
+      //   cant++;
+      // } while (cant != 11);
+
+      // for (let i = 0; i < carton.length; i++) {
+      //   if (carton[i] != undefined) {
+      //     document.write(
+      //       "Carton " + i + " tiene un premio de " + carton[i] + "<br>"
+      //     );
+      //   }
+      // }
+    </script>
+
+    <!-- Métodos push y pop
+    Realizar la carga de sueldos por teclado hasta que se ingrese el cero.
+    Almacenar todos los valores ingresados en un vector empleando el método
+    push. Mostrar la suma de sueldos ingresados. -->
+    <script>
+      // let sueldo;
+      // let vector = [];
+      // let suma = 0;
+
+      // do {
+      //   sueldo = parseInt(prompt(`Ingrese sueldo(0 para sinalizar)`));
+      //   if (sueldo != 0) {
+      //     vector.push(sueldo);
+      //   }
+      // } while (sueldo != 0);
+
+      // for (let i = 0; i < vector.length; i++) {
+      //   suma += vector[i];
+      //   document.write(`Sueldos ingresados:${vector[i]}<br>`);
+      // }
+      // document.write(`Suma de sueldos:${suma}<br>`);
+    </script>
+    <!-- Crear un vector con 5 valores aleatorios comprendidos entre 1 y 1000. Luego extraer los dos últimos elementos sumarlos y mostrarlos. Imprimir también el tamaño final del vector. -->
+    <script>
+      // let vec = [];
+      // for (let i = 0; i < 5; i++) {
+      //   let nro = 1 + Math.random() * 1000;
+      //   vec.push(parseInt(nro));
+      // }
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + "<br>");
+      // }
+      // let sumaultimos = vec.pop() + vec.pop();
+      // document.write(
+      //   "La suma de las dos últimas componentes es:" + sumaultimos + "<br>"
+      // );
+      // document.write("Tamaño final del vector:" + vec.length + "<br>");
+      // document.write("Elementos restantes del vector<br>");
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + "<br>");
+      // }
+    </script>
+    <!-- Métodos unshift y shift 
+    Ingresar valores por teclado. Los valores menores a
+    100 ingresarlos al principio del vector y los mayores o iguales a 100
+    ingresarlos al final. Se finaliza la carga de datos al ingresar el cero.
+    Cuando sale del do/while extraer el último valor ingresado que es el cero
+    del vector. Imprimir el vector en la página -->
+
+    <script>
+      // let vec = [];
+      // let valor;
+      // do {
+      //     valor = parseInt(prompt('Ingresar un valor (0 para finalizar):'));
+      //     if (valor < 100) {
+      //         vec.unshift(valor);
+      //     } else {
+      //         vec.push(valor);
+      //     }
+      // } while (valor != 0);
+      // vec.shift();
+      // for (let i = 0; i < vec.length; i++) {
+      //     document.write(vec[i] + '<br>');
+      // }
+    </script>
+    <!--!! Array: instrucción delete(No utilizar este metodo, ya que una vez elimnado un elemento se convierte en un array disperso, mejor utilizar splice() o averiguar otro metodo) -->
+    <script>
+      // let vector = [1, 2, 3, 4, 5, 6, 7, 8];
+
+      // delete vector[0];
+      // document.write(`${vector}<br>`);
+    </script>
+    <!-- Crear un vector de 10 elementos y almacenar valores aleatorios en el mismo. Luego borrar los elementos de las posiciones pares e imprimir el vector antes y después de borrar las componentes, inclusive tratar de acceder a las componentes que acabamos de borrar. -->
+    <script>
+      // let vec = [];
+      // for (let i = 0; i < 10; i++) {
+      //   let valor = parseInt(Math.random() * 1000);
+      //   vec.push(valor);
+      // }
+      // document.write("Vector antes de borrar<br>");
+      // for (let i = 0; i < 10; i++) {
+      //   document.write(vec[i] + "<br>");
+      // }
+      // for (let i = 0; i < 10; i = i + 2) {
+      //   delete vec[i];
+      // }
+      // document.write("Vector luego de borrar las posiciones pares<br>");
+      // for (let i = 0; i < 10; i++) {
+      //   document.write(vec[i] + "<br>");
+      // }
+    </script>
+
+    <!-- Array: métodos sort y reverse
+    Ordenar un array -->
+    <script>
+      // let nombres = ["marcos", "ana", "luis", "jorge", "carlos"];
+      // document.write("Vector antes de ordenarlo<br>");
+      // for (let i = 0; i < nombres.length; i++) {
+      //   document.write(nombres[i] + "<br>");
+      // }
+      // nombres.sort();
+      // document.write("Vector después de ordenarlo<br>");
+      // for (let i = 0; i < nombres.length; i++) {
+      //   document.write(nombres[i] + "<br>");
+      // }
+    </script>
+
+    <!-- Ordenar numero de menor a mayor -->
+    <script>
+      // let vec = [100, 5, 60, 3, 90];
+      // document.write("Vector antes de ordenarlo<br>");
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + "<br>");
+      // }
+      // vec.sort(function (v1, v2) {
+      //   if (v1 < v2) return -1; // v1 es menor que v2
+      //   else return 1; // v1 es mayor que v2
+      // });
+      // document.write("Vector después de ordenarlo<br>");
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + "<br>");
+      // }
+    </script>
+    <!-- Crear un vector con 10 elementos enteros con valores aleatorios. Ordenarlos
+    de menor a mayor. Luego invertir el vector para verlo de mayor a menor. -->
+    <script>
+      // let vector = [];
+      // document.write(`Numeros aleatorios:<br>`);
+      // for (let i = 0; i < 10; i++) {
+      //   let num = parseInt(Math.random() * 1000) + 1;
+      //   vector.push(num);
+      //   document.write(`${vector[i]}<br>`);
+      // }
+      // document.write(`Numeros de menor a mayor :<br>`);
+      // /**
+      //  *Todo:Metodo para ordenar un vector numerico de menor a mayor
+      //  */
+      // vector.sort(function (a, b) {
+      //   if (a < b) return -1;
+      //   else return +1;
+      // });
+
+      // for (let i = 0; i < 10; i++) {
+      //   document.write(`${vector[i]}<br>`);
+      // }
+      // document.write(`Numeros de mayor a menor :<br>`);
+      // vector.reverse();
+      // for (let i = 0; i < 10; i++) {
+      //   document.write(`${vector[i]}<br>`);
+      // }
+    </script>
+    <!-- Definir un arreglo de cuatro elementos de tipo objeto, cada objeto
+    representa una persona con su nombre y edad. Imprimir el vector previo y
+    posteriormente a su ordenamiento por la edad. -->
+    <script>
+      // let personas = [
+      //   {
+      //     nombre: "diego",
+      //     edad: 53,
+      //   },
+      //   {
+      //     nombre: "carlos",
+      //     edad: 26,
+      //   },
+      //   {
+      //     nombre: "ana",
+      //     edad: 70,
+      //   },
+      //   {
+      //     nombre: "victoria",
+      //     edad: 15,
+      //   },
+      // ];
+      // document.write("Personas y sus edades<br>");
+      // for (let i = 0; i < personas.length; i++) {
+      //   document.write(
+      //     "Nombre:" +
+      //       personas[i].nombre +
+      //       " - " +
+      //       "Edad:" +
+      //       personas[i].edad +
+      //       "<br>"
+      //   );
+      // }
+      // document.write("Personas ordenadas por su edad sus edades<br>");
+      // personas.sort(function (persona1, persona2) {
+      //   if (persona1.edad > persona2.edad) {
+      //     return -1;
+      //   } else {
+      //     return 1;
+      //   }
+      // });
+      // document.write("Personas y sus edades<br>");
+      // for (let i = 0; i < personas.length; i++) {
+      //   document.write(
+      //     "Nombre:" +
+      //       personas[i].nombre +
+      //       " - " +
+      //       "Edad:" +
+      //       personas[i].edad +
+      //       "<br>"
+      //   );
+      // }
+    </script>
+    <!-- Cargar los sueldos de un conjunto de empleados. Finalizar la carga al
+    ingresar cero. Mostrar por pantalla los sueldos ordenados de mayor a menor. -->
+    <script>
+      // let vector = [];
+      // let valor;
+      // do {
+      //   valor = parseInt(
+      //     prompt(`Ingrese un sueldo(presione 0 para finalizar)`)
+      //   );
+      //   if (valor != 0) {
+      //     vector.push(valor);
+      //   }
+      // } while (valor != 0);
+
+      // vector.sort(function ordenar(a, b) {
+      //   if (a < b) {
+      //     return -1;
+      //   } else {
+      //     return 1;
+      //   }
+      // });
+
+      // document.write(`Sueldos de menor a mayor:<br>`);
+      // for (let i = 0; i < vector.length; i++) {
+      //   document.write(`${vector[i]}<br>`);
+      // }
+
+      // vector.reverse();
+      // document.write(`Sueldos de mayor a menor:<br>`);
+      // for (let i = 0; i < vector.length; i++) {
+      //   document.write(`${vector[i]}<br>`);
+      // }
+    </script>
+    <!-- Array: método splice
+  eliminar 3 componentes del vector a partir de la segunda componentes: -->
+
+    <!--Todo: Para borrar elementos debemos indicar dos parámetros al método splice, el primero indica a partir de que posición procedemos a borrar componentes y el segundo parámetro indica la cantidad de componentes a borrar. -->
+    <script>
+      // let vec = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+      // document.write("Vector inicial<br>");
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + "<br>");
+      // }
+      // vec.splice(1, 3);
+      // document.write("Vector luego de borrar<br>");
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + "<br>");
+      // }
+    </script>
+    <!--Todo: extraer elelemntos -->
+    <script>
+      // let vec = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+      // document.write("Vector inicial<br>");
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + "<br>");
+      // }
+      // let vec2 = vec.splice(1, 3);
+      // document.write("Elementos extraídos<br>");
+      // for (let i = 0; i < vec2.length; i++) {
+      //   document.write(vec2[i] + "<br>");
+      // }
+    </script>
+    <!--Todo: Podemos indicar un valor negativo y el posicionamiento se cuenta desde el final del vector, por ejemplo si queremos eliminar los dos últimos elementos del vector luego debemos codificar -->
+    <script>
+      // let vec = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+      // document.write("Vector inicial<br>");
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + "<br>");
+      // }
+      // vec.splice(-2, 3);
+      // document.write("Eliminados los dos últimos elementos<br>");
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + "<br>");
+      // }
+    </script>
+    <!--Todo: Insertar un valor con splice  -->
+    <!-- Debemos pasar como mínimo 3 o más parámetros. Los dos primeros cumplen la
+    misma función que cuando borramos (pero en este caso pasamos un cero en el
+    segundo parámetro) y del tercer parámetro en adelante se indican los valores
+    a insertar en el vector. 
+   Codificaremos un programa que inserte los valores 10,20,30,40 a partir de la segunda componente:-->
+    <script>
+      // let vec = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+      // document.write("Vector inicial<br>");
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + "<br>");
+      // }
+      // vec.splice(1, 0, 10, 20, 30, 40);
+      // document.write("Vector luego insertar 4 valores<br>");
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + "<br>");
+      // }
+    </script>
+    <!--Todo: Borrar e insertar con splice -->
+    <!-- La tercer posibilidad que nos presenta este método es en el mismo momento
+    que borramos elementos procedemos a insertar otros. Para probar el borrar e
+    insertar en forma simultánea confeccionaremos un programa que borre desde la
+    posición 1 tres elementos e inserte otros cinco elementos -->
+    <script>
+      // let vec = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+      // document.write("Vector inicial<br>");
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + "<br>");
+      // }
+      // vec.splice(1, 3, 10, 20, 30, 40, 50);
+      // document.write(
+      //   "Vector luego de borrar 3 elementos e insertar otros 5 valores<br>"
+      // );
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + "<br>");
+      // }
+    </script>
+    <!-- Crear un vector con una lista de valores. Luego borrar las componentes donde
+    hay un 2 y al mismo tiempo insertar dos elementos con el valor 1. -->
+    <script>
+      // let vec = [0, 7, 2, 3, 4, 2, 6, 2, 8, 2];
+      // document.write("vector original<br>");
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + " ");
+      // }
+      // let i = 0;
+      // do {
+      //   if (vec[i] === 2) {
+      //     vec.splice(i, 1, 1, 1);
+      //   }
+      //   i++;
+      // } while (i < vec.length);
+      // document.write("<br>vector modificado<br>");
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + " ");
+      // }
+    </script>
+    <!--Todo: Método slice :Este metodo(traducido al castellano: trozo) retorna un trozo del vector. La sintaxis es:vec.slice(2,4);El primer parámetro indica a partir de que elementos debe retornar y el segundo parámetro hasta cual elemento (sin incluir dicha posición) -->
+    <script>
+      // let vec = [10, 20, 30, 40, 50, 60];
+      // document.write("Vector original<br>");
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + "-");
+      // }
+      // document.write("<br>");
+
+      // let vec2 = vec.slice(1, 4);
+      // document.write("Vector resultante de la llamada a slice<br>");
+      // for (let i = 0; i < vec2.length; i++) {
+      //   document.write(vec2[i] + "-");
+      // }
+    </script>
+    <!--Todo: Si queremos extraer desde una determinada posición hasta el final del vector debemos llamar al método slice con un solo parámetro: -->
+    <script>
+      // let vec = [10, 20, 30, 40, 50, 60];
+      // document.write(`Vector original:${vec}<br>`);
+      // let vec2 = vec.slice(2); // vec2 almacena [30,40,50,60]
+      // document.write(`Vector resultante de la llamada a slice:${vec2}<br>`);
+    </script>
+    <!--Todo: Si queremos indicar una posición pero comenzando desde el final del vector debemos indicar un valor negativo en el primer parámetro: -->
+    <script>
+      // let vec = [10, 20, 30, 40, 50, 60];
+      // document.write(`Vector original:${vec}<br>`);
+      // let vec2 = vec.slice(-2); // vec2 almacena [50,60]
+      // document.write(`Vector resultante de la llamada a slice:${vec2}<br>`);
+    </script>
+    <!--Todo: También podemos indicar el segundo parámetro: en este metodo parece que el ultimo elemento no lo selecciona(60), al igual cuando trabajamos con numeros positivos-->
+    <script>
+      // let vec = [10, 20, 30, 40, 50, 60];
+      // document.write(`Vector original:${vec}<br>`);
+      // let vec2 = vec.slice(-3, -1); // vec2 almacena [40,50]
+      // document.write(`Vector resultante de la llamada a slice:${vec2}<br>`);
+    </script>
+    <!--Todo: Por último podemos indicar el primer parámetro un valor positivo y el segundo un valor negativo indicando una posición desde el final -->
+    <script>
+      // let vec = [10, 20, 30, 40, 50, 60];
+      // document.write(`Vector original:${vec}<br>`);
+      // let vec2 = vec.slice(1, -1); // vec2 almacena [20,30,40,50]
+      // document.write(`Vector resultante de la llamada a slice:${vec2}<br>`);
+    </script>
+    <!-- Crear un vector de 10 elementos con valores aleatorios comprendidos entre 0
+    y 1000. Buscar el menor y luego generar otro vector a partir de dicha
+    posición hasta el final. -->
+    <script>
+      // let vec = [];
+      // for (let i = 0; i < 10; i++) {
+      //   vec[i] = parseInt(Math.random() * 1001);
+      // }
+      // document.write("Vector original<br>");
+      // for (let i = 0; i < vec.length; i++) {
+      //   document.write(vec[i] + "-");
+      // }
+      // document.write("<br>");
+      // let menor = vec[0];
+      // let pos = 0;
+      // for (let i = 1; i < vec.length; i++) {
+      //   if (vec[i] < menor) {
+      //     menor = vec[i];
+      //     pos = i;
+      //   }
+      // }
+      // document.write("Elemento menor del vector:" + menor);
+      // document.write("<br>");
+      // let vec2 = vec.slice(pos);
+      // document.write("Vector resultante de la llamada a slice<br>");
+      // for (let i = 0; i < vec2.length; i++) {
+      //   document.write(vec2[i] + "-");
+      // }
+    </script>
+    <!-- Todo:método join:Al método join le pasamos como parámetro el o los caracteres de separación que debe agregar entre los elementos dentro del string que se genera. -->
+    <script>
+      // let vec = [10, 20, 30, 40, 50];
+      // let cadena = vec.join("-");
+      // document.write(cadena);
+    </script>
+    <!-- Crear un vector con los datos de 5 personas. Luego imprimir por pantalla uno
+    abajo de otro utilizando el método join para generar un string y agregarle
+    entre elementos la etiqueta html <br />. -->
+    <script>
+      // let nombres = new Array(5);
+      // for (let i = 0; i < nombres.length; i++) {
+      //   nombres[i] = prompt("Ingrese un nombre:");
+      // }
+      // document.write(nombres.join("<br>"));
+    </script>
+    <script>
+      // let vec = [10, 20, 30, 40];
+      // let vecnuevo = vec.concat(1, 2, 3);
+      // document.write("Vector origen<br>");
+      // document.write(vec.join() + "<br>");
+      // document.write("Vector generado<br>");
+      // document.write(vecnuevo.join() + "<br>");
+    </script>
+    <!--Todo: Método concat -->
+    <script>
+      // let vec1 = [10, 20, 30, 40];
+      // let vec2 = [100, 200, 300, 400];
+      // let vecsuma = vec1.concat(vec2);
+      // document.write("Primer vector:");
+      // document.write(vec1.join() + "<br>");
+      // document.write("Segundo vector:");
+      // document.write(vec2.join() + "<br>");
+      // document.write("vectores concatenados:");
+      // document.write(vecsuma.join() + "<br>");
+    </script>
+    <!--Todo: método toString -->
+    <script>
+      // let vec = new Array(10);
+      // for (let i = 0; i < vec.length; i++) {
+      //   vec[i] = parseInt(Math.random() * 1001);
+      // }
+      // let cadena = vec.toString();
+      // document.write(cadena);
+    </script>
+    <!-- Crear un vector de 10 elementos. Inicializar los valores del vector cuando
+    se crea. Inicializar dos variables que resulten de llamar primero al método
+    toString() y la segunda variable inicializarla llamando al método join() sin
+    parámetros. Mostrar un mensaje si el resultado de la ejecución de los dos
+    métodos retorna el mismo valor (empleando un if para comparar los string) -->
+
+    <script>
+      // let vec = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      // let cadena1 = vec.toString();
+      // let cadena2 = vec.join();
+      // if (cadena1 == cadena2) document.write("son iguales los dos string");
+      // else document.write("no son iguales los dos string");
+    </script>
+
+    <!--Todo: for of:Este metodo recorremos los elementos del array [`Jorge`, `Dilia`, `Allan`, `yuris`] y con for in recorremos los indices(posiciones[0,1,2,3]). -->
+    <script>
+      // let objects = { a: 1, b: 2, c: 3 };
+
+      // document.write(`Recorriendo los nombres de las propiedades<br>`);
+      // for (const object in objects) {
+      //   document.write(`${object}<br>`);
+      // }
+      // document.write(`Recorriendo las propiedades<br>`);
+      // for (const object in objects) {
+      //   document.write(`${objects[object]}<br>`);
+      // }
+
+      // document.write(`Recorriendo todo el objeto<br>`);
+      // for (const object in objects) {
+      //   // document.write(`${object}<br>`);
+      //   document.write(`${object}:${objects[object]}<br>`);
+      // }
+    </script>
+    <!-- Metodo forEach():El método forEach() ejecuta la función indicada una vez por cada elemento del array. -->
+    <!--Todo:imprimir elementos con el metodo forEach  -->
+    <script>
+      const array1 = ["a", "b", "c"];
+      array1.forEach((element) => document.write(`${element}<br>`));
+    </script>
+    <!--Todo:imprimir elementos e indices con el metodo forEach  -->
+
+    <script>
+      const array2 = ["a", "b", "c"];
+      array1.forEach((element, indices) => {
+        document.write(`${element},${indices}<br>`);
+      });
+    </script>
+    <!--Todo:imprimir elementos,indices y el array con el metodo forEach  -->
+    <script>
+      const array3 = ["a", "b", "c"];
+      array1.forEach((element, indices, array) => {
+        document.write(`${element},${indices},${array}<br>`);
+      });
+    </script>
+  </body>
+</html>

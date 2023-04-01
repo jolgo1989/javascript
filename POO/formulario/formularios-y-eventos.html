@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Cargar un string por teclado y luego llamar a los distintos métodos de la clase String y la propiedad length. -->
+  <!-- <form>
+    <input type="button" onclick="incrementar()" value="incrementar" />
+  </form>
+
+  <script>
+    let contador = 0;
+
+        function incrementar() {
+            contador++;
+            alert('El contador ahora vale :' + contador);
+        }
+  </script> -->
+
+  <!-- Crear un formulario con tres botones con las leyendas "1", "2" y "3". Mostrar un mensaje indicando qué botón se presionó. -->
+
+  <!-- <form>
+      <input type="button" onclick="numero1()" value="Numero1" />
+      <input type="button" onclick="numero2()" value="Numero2" />
+      <input type="button" onclick="numero3()" value="Numero3" />
+    </form>
+    <script>
+      function numero1() {
+        alert("El boton presionado fue el numero1");
+      }
+      function numero2() {
+        alert("El boton presionado fue el numero2");
+      }
+      function numero3() {
+        alert("El boton presionado fue el numero3");
+      }
+    </script> -->
+  <!-- Implementar un formulario que solicite la carga del nombre de usuario y su clave. Mostrar un mensaje si no se ingresan datos en alguno de los dos controles. -->
+  <form>
+    <label>Formulario1
+      <input type="text" id="formulario1" />
+    </label>
+    <label>Formulario2
+      <input type="text" id="formulario2" />
+    </label>
+
+    <input type="button" , id="button" , value="Confirmar" />
+  </form>
+  <script>
+    const button = document.getElementById("button");
+
+    button.addEventListener("click", () => {
+      let vacio = 0;
+      let text1 = parseInt(document.getElementById("formulario1").value);
+      let text2 = parseInt(document.getElementById("formulario2").value);
+
+      if (Number.isNaN(text1) || Number.isNaN(text1)) {
+        alert(`Campos vacios`);
+      } else {
+        let suma = text1 + text2;
+        return alert(suma);
+      }
+    });
+  </script>
+
+</body>
+
+</html>
